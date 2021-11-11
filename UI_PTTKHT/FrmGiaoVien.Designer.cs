@@ -76,12 +76,12 @@ namespace UI_PTTKHT
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lblTen = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -516,6 +516,7 @@ namespace UI_PTTKHT
             this.button10.TabIndex = 1;
             this.button10.Text = "Xem chi tiết";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // textBox1
             // 
@@ -524,10 +525,12 @@ namespace UI_PTTKHT
             this.textBox1.ForeColor = System.Drawing.Color.Red;
             this.textBox1.Location = new System.Drawing.Point(3, 16);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(246, 116);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "5";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // groupBox1
             // 
@@ -555,6 +558,7 @@ namespace UI_PTTKHT
             this.button7.TabIndex = 0;
             this.button7.Text = "Danh sách lớp";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -565,6 +569,7 @@ namespace UI_PTTKHT
             this.button6.TabIndex = 0;
             this.button6.Text = "Tổ Chức Bài Tập";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -575,6 +580,7 @@ namespace UI_PTTKHT
             this.button5.TabIndex = 0;
             this.button5.Text = "Xem lịch dạy";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -585,6 +591,7 @@ namespace UI_PTTKHT
             this.button4.TabIndex = 0;
             this.button4.Text = "Xem bảng lương";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -595,6 +602,7 @@ namespace UI_PTTKHT
             this.button3.TabIndex = 0;
             this.button3.Text = "Điểm Số";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -605,6 +613,7 @@ namespace UI_PTTKHT
             this.button2.TabIndex = 0;
             this.button2.Text = "Đề Thi";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -618,12 +627,12 @@ namespace UI_PTTKHT
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.lblGender);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.lblTen);
+            this.groupBox2.Controls.Add(this.lblID);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label9);
@@ -638,47 +647,66 @@ namespace UI_PTTKHT
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin cá nhân:";
             // 
-            // textBox7
+            // label22
             // 
-            this.textBox7.Location = new System.Drawing.Point(463, 67);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(235, 20);
-            this.textBox7.TabIndex = 2;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(440, 66);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(90, 18);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "25/07/1986";
             // 
-            // textBox8
+            // lblGender
             // 
-            this.textBox8.Location = new System.Drawing.Point(95, 66);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(235, 20);
-            this.textBox8.TabIndex = 2;
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Location = new System.Drawing.Point(95, 65);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(29, 18);
+            this.lblGender.TabIndex = 3;
+            this.lblGender.Text = "Nữ";
             // 
-            // textBox9
+            // label21
             // 
-            this.textBox9.Location = new System.Drawing.Point(463, 44);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(235, 20);
-            this.textBox9.TabIndex = 2;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(440, 43);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(98, 18);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "0383456352";
             // 
-            // textBox10
+            // label20
             // 
-            this.textBox10.Location = new System.Drawing.Point(95, 43);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(235, 20);
-            this.textBox10.TabIndex = 2;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(440, 22);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(125, 18);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Tp.Hồ Chí Minh";
             // 
-            // textBox11
+            // lblTen
             // 
-            this.textBox11.Location = new System.Drawing.Point(463, 19);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(235, 20);
-            this.textBox11.TabIndex = 2;
+            this.lblTen.AutoSize = true;
+            this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.Location = new System.Drawing.Point(95, 39);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(121, 18);
+            this.lblTen.TabIndex = 3;
+            this.lblTen.Text = "Nguyễn Tú Anh";
             // 
-            // textBox12
+            // lblID
             // 
-            this.textBox12.Location = new System.Drawing.Point(95, 18);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(235, 20);
-            this.textBox12.TabIndex = 2;
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(95, 17);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(71, 18);
+            this.lblID.TabIndex = 3;
+            this.lblID.Text = "1983277";
+            this.lblID.Click += new System.EventHandler(this.label17_Click);
             // 
             // label1
             // 
@@ -739,7 +767,7 @@ namespace UI_PTTKHT
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(754, 638);
+            this.tabPage3.Size = new System.Drawing.Size(754, 460);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Xem Thông Tin HS";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -749,7 +777,7 @@ namespace UI_PTTKHT
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(754, 638);
+            this.tabPage4.Size = new System.Drawing.Size(754, 460);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Xem Bảng Lương";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -759,7 +787,7 @@ namespace UI_PTTKHT
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(754, 638);
+            this.tabPage5.Size = new System.Drawing.Size(754, 460);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Quản Lý Điểm Số";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -769,7 +797,7 @@ namespace UI_PTTKHT
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(754, 638);
+            this.tabPage6.Size = new System.Drawing.Size(754, 460);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Ngân Hàng Đề Thi";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -779,7 +807,7 @@ namespace UI_PTTKHT
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(754, 638);
+            this.tabPage2.Size = new System.Drawing.Size(754, 460);
             this.tabPage2.TabIndex = 6;
             this.tabPage2.Text = "Tổ Chức Kiểm Tra";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -789,7 +817,7 @@ namespace UI_PTTKHT
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(754, 638);
+            this.tabPage7.Size = new System.Drawing.Size(754, 460);
             this.tabPage7.TabIndex = 7;
             this.tabPage7.Text = "Lịch Dạy";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -799,7 +827,7 @@ namespace UI_PTTKHT
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(754, 638);
+            this.tabPage8.Size = new System.Drawing.Size(754, 460);
             this.tabPage8.TabIndex = 8;
             this.tabPage8.Text = "Bài Tập";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -812,6 +840,7 @@ namespace UI_PTTKHT
             this.Controls.Add(this.tabControl1);
             this.Name = "FrmGiaoVien";
             this.Text = "Giáo Viên";
+            this.Load += new System.EventHandler(this.FrmGiaoVien_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -863,12 +892,6 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
@@ -911,5 +934,11 @@ namespace UI_PTTKHT
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblTen;
+        private System.Windows.Forms.Label lblID;
     }
 }
