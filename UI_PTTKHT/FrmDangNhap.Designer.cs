@@ -44,7 +44,7 @@ namespace UI_PTTKHT
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 16);
+            this.label1.Size = new System.Drawing.Size(31, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
@@ -53,7 +53,7 @@ namespace UI_PTTKHT
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Họ và tên:";
             // 
@@ -61,21 +61,21 @@ namespace UI_PTTKHT
             // 
             this.txtID.Location = new System.Drawing.Point(92, 21);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(353, 22);
+            this.txtID.Size = new System.Drawing.Size(353, 26);
             this.txtID.TabIndex = 0;
             // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(92, 51);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(353, 22);
+            this.txtTen.Size = new System.Drawing.Size(353, 26);
             this.txtTen.TabIndex = 1;
             // 
             // btnDangNhap
             // 
             this.btnDangNhap.Location = new System.Drawing.Point(185, 115);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(101, 23);
+            this.btnDangNhap.Size = new System.Drawing.Size(101, 29);
             this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@ namespace UI_PTTKHT
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Giới tính:";
             // 
@@ -95,7 +95,7 @@ namespace UI_PTTKHT
             this.radNam.AutoSize = true;
             this.radNam.Location = new System.Drawing.Point(92, 82);
             this.radNam.Name = "radNam";
-            this.radNam.Size = new System.Drawing.Size(55, 20);
+            this.radNam.Size = new System.Drawing.Size(65, 24);
             this.radNam.TabIndex = 2;
             this.radNam.TabStop = true;
             this.radNam.Text = "Nam";
@@ -106,7 +106,7 @@ namespace UI_PTTKHT
             this.radNu.AutoSize = true;
             this.radNu.Location = new System.Drawing.Point(172, 82);
             this.radNu.Name = "radNu";
-            this.radNu.Size = new System.Drawing.Size(43, 20);
+            this.radNu.Size = new System.Drawing.Size(51, 24);
             this.radNu.TabIndex = 3;
             this.radNu.TabStop = true;
             this.radNu.Text = "Nữ";
@@ -114,7 +114,7 @@ namespace UI_PTTKHT
             // 
             // FrmDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 150);
             this.Controls.Add(this.radNu);

@@ -79,5 +79,10 @@ namespace UI_PTTKHT
             lblTen.Text = fullName;
             lblGender.Text = gender;
         }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
