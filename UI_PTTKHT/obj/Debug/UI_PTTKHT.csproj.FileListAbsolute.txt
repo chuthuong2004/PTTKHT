@@ -20,3 +20,15 @@ E:\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
 E:\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
 E:\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
 E:\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe.config
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.SuggestedBindingRedirects.cache
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
+D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
