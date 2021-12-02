@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace UI_PTTKHT
@@ -19,25 +13,38 @@ namespace UI_PTTKHT
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (txtID.Text != string.Empty && txtTen.Text != string.Empty && (radNam.Checked || radNu.Checked))
+            //if (txtID.Text != string.Empty && txtTen.Text != string.Empty && (radNam.Checked || radNu.Checked))
+            //{
+                
+            //}
+            Thread thread = new Thread(() =>
             {
-                ShowFrmGiaoVien(txtID.Text, txtTen.Text);
-                this.Hide();
-            }
+                string gender = "";
+                if (radNam.Checked)
+                    gender = "Nam";
+                else
+                    gender = "Nữ";
+                FrmGiaoVien f = new FrmGiaoVien(txtID.Text, txtTen.Text, gender);
+                f.ShowDialog();
+            });
+            thread.Start();
+            Thread.Sleep(100);
+            this.Close();
         }
-        private void ShowFrmGiaoVien(string id, string name)
+        private void ShowFrmGiaoVien()
         {
             string gender = "";
             if (radNam.Checked)
                 gender = "Nam";
             else
                 gender = "Nữ";
-            FrmGiaoVien f = new FrmGiaoVien(id, name, gender);
+            FrmGiaoVien f = new FrmGiaoVien(txtID.Text, txtTen.Text, gender);
             f.ShowDialog();
         }
 
         private void FrmDangNhapGiaoVien_Load(object sender, EventArgs e)
         {
+            txtID.Focus();
             radNam.Checked = true;
         }
     }

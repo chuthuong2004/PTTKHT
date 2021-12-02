@@ -127,6 +127,7 @@ namespace UI_PTTKHT
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmDangNhapHocSinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmDangNhapHocSinh";
             this.Load += new System.EventHandler(this.FrmDangNhapHocSinh_Load);
             this.ResumeLayout(false);

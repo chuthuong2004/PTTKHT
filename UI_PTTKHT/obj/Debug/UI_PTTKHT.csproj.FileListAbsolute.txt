@@ -60,3 +60,29 @@ E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\1\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe.config
+E:\PTTKHT\1\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
+E:\PTTKHT\1\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
+E:\PTTKHT\1\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\2\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe.config
+E:\PTTKHT\2\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
+E:\PTTKHT\2\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
+E:\PTTKHT\2\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb

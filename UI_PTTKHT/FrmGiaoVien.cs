@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace UI_PTTKHT
@@ -79,25 +73,17 @@ namespace UI_PTTKHT
             lblTen.Text = fullName;
             lblGender.Text = gender;
         }
-
-        private void label20_Click(object sender, EventArgs e)
+        private void lblDangXuat_Click(object sender, EventArgs e)
         {
-
+            Thread thread = new Thread(new ThreadStart(DangXuat));
+            thread.Start();
+            this.Close();
+        }
+        private void DangXuat()
+        {
+            FrmDangNhap f = new FrmDangNhap();
+            f.ShowDialog();
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

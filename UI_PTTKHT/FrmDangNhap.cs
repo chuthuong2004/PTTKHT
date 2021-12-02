@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace UI_PTTKHT
@@ -19,16 +13,27 @@ namespace UI_PTTKHT
 
         private void btnDangNhapGV_Click(object sender, EventArgs e)
         {
-            FrmDangNhapGiaoVien f = new FrmDangNhapGiaoVien();
-            f.Show();
-            this.Hide();
+            Thread thread = new Thread(new ThreadStart(ShowFormDangNhapGiaoVien));
+            thread.Start();
+            Thread.Sleep(100);
+            this.Close();
         }
-
-        private void btnDangNhapHs_Click(object sender, EventArgs e)
+        private void ShowFormDangNhapGiaoVien()
+        {
+            FrmDangNhapGiaoVien f = new FrmDangNhapGiaoVien();
+            f.ShowDialog();
+        }
+        private void ShowFormDangNhapHocSinh()
         {
             FrmDangNhapHocSinh f = new FrmDangNhapHocSinh();
-            f.Show();
-            this.Hide();
+            f.ShowDialog();
+        }
+        private void btnDangNhapHs_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(ShowFormDangNhapHocSinh));
+            thread.Start();
+            Thread.Sleep(100);
+            this.Close();
         }
     }
 }
