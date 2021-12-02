@@ -32,3 +32,31 @@ D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI
 D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
 D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
 D:\Document\2021-2022\HKI\PhanTichThietKeGiaiThuat\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe.config
+E:\PTTKHT\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
+E:\PTTKHT\PTTKHT\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
+E:\PTTKHT\PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\New folder\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe.config
+E:\PTTKHT\New folder\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
+E:\PTTKHT\New folder\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.exe
+E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.pdb

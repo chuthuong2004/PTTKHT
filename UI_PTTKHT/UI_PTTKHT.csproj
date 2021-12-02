@@ -52,16 +52,40 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDangNhapGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhapGiaoVien.Designer.cs">
+      <DependentUpon>FrmDangNhapGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangNhapHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhapHocSinh.Designer.cs">
+      <DependentUpon>FrmDangNhapHocSinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmGiaoVien.Designer.cs">
       <DependentUpon>FrmGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHocSinh.Designer.cs">
+      <DependentUpon>FrmHocSinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhapGiaoVien.resx">
+      <DependentUpon>FrmDangNhapGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhapHocSinh.resx">
+      <DependentUpon>FrmDangNhapHocSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiaoVien.resx">
       <DependentUpon>FrmGiaoVien.cs</DependentUpon>

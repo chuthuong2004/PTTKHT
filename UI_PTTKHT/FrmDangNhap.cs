@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,28 +17,18 @@ namespace UI_PTTKHT
             InitializeComponent();
         }
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void btnDangNhapGV_Click(object sender, EventArgs e)
         {
-            if (txtID.Text!=string.Empty && txtTen.Text !=string.Empty && (radNam.Checked||radNu.Checked))
-            {
-                ShowFrmGiaoVien(txtID.Text, txtTen.Text);
-                Hide();
-            }
-        }
-        private void ShowFrmGiaoVien(string id, string name)
-        {
-            string gender = "";
-            if (radNam.Checked)
-                gender = "Nam";
-            else
-                gender = "Nữ";
-            FrmGiaoVien f = new FrmGiaoVien(id,name,gender);
-            f.ShowDialog();
+            FrmDangNhapGiaoVien f = new FrmDangNhapGiaoVien();
+            f.Show();
+            this.Hide();
         }
 
-        private void FrmDangNhap_Load(object sender, EventArgs e)
+        private void btnDangNhapHs_Click(object sender, EventArgs e)
         {
-            radNam.Checked = true;
+            FrmDangNhapHocSinh f = new FrmDangNhapHocSinh();
+            f.Show();
+            this.Hide();
         }
     }
 }
