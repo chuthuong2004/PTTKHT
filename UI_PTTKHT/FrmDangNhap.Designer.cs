@@ -29,53 +29,83 @@ namespace UI_PTTKHT
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDangNhapGV = new System.Windows.Forms.Button();
-            this.btnDangNhapHs = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnDangNhapGV
+            // btnDangNhap
             // 
-            this.btnDangNhapGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhapGV.Location = new System.Drawing.Point(38, 28);
-            this.btnDangNhapGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDangNhapGV.Name = "btnDangNhapGV";
-            this.btnDangNhapGV.Size = new System.Drawing.Size(381, 31);
-            this.btnDangNhapGV.TabIndex = 0;
-            this.btnDangNhapGV.Text = "Đăng nhập với giáo viên";
-            this.btnDangNhapGV.UseVisualStyleBackColor = true;
-            this.btnDangNhapGV.Click += new System.EventHandler(this.btnDangNhapGV_Click);
+            this.btnDangNhap.Location = new System.Drawing.Point(196, 124);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(98, 30);
+            this.btnDangNhap.TabIndex = 2;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // btnDangNhapHs
+            // label1
             // 
-            this.btnDangNhapHs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhapHs.Location = new System.Drawing.Point(38, 88);
-            this.btnDangNhapHs.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDangNhapHs.Name = "btnDangNhapHs";
-            this.btnDangNhapHs.Size = new System.Drawing.Size(381, 31);
-            this.btnDangNhapHs.TabIndex = 0;
-            this.btnDangNhapHs.Text = "Đăng nhập với học sinh";
-            this.btnDangNhapHs.UseVisualStyleBackColor = true;
-            this.btnDangNhapHs.Click += new System.EventHandler(this.btnDangNhapHs_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tên đăng nhập:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Mật khẩu:";
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Location = new System.Drawing.Point(131, 28);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(315, 22);
+            this.txtTenDangNhap.TabIndex = 0;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(131, 74);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(315, 22);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // FrmDangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 150);
-            this.Controls.Add(this.btnDangNhapHs);
-            this.Controls.Add(this.btnDangNhapGV);
+            this.ClientSize = new System.Drawing.Size(479, 166);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtTenDangNhap);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnDangNhap);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmDangNhap";
+            this.Text = "Đăng nhập";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnDangNhapGV;
-        private System.Windows.Forms.Button btnDangNhapHs;
+        private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }

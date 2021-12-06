@@ -11,29 +11,38 @@ namespace UI_PTTKHT
             InitializeComponent();
         }
 
-        private void btnDangNhapGV_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(ShowFormDangNhapGiaoVien));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-        private void ShowFormDangNhapGiaoVien()
-        {
-            FrmDangNhapGiaoVien f = new FrmDangNhapGiaoVien();
-            f.ShowDialog();
-        }
-        private void ShowFormDangNhapHocSinh()
-        {
-            FrmDangNhapHocSinh f = new FrmDangNhapHocSinh();
-            f.ShowDialog();
-        }
-        private void btnDangNhapHs_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormDangNhapHocSinh));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
+            if (txtTenDangNhap.Text == "admin" && txtPassword.Text == "admin")
+            {
+                Thread thread = new Thread(new ThreadStart(() =>
+                {
+                    FrmAdTrangChu frm = new FrmAdTrangChu();
+                    frm.ShowDialog();
+                }));
+                thread.Start();
+                Thread.Sleep(100);
+                this.Close();
+            }
+            else if (txtTenDangNhap.Text == "teacher" && txtPassword.Text == "teacher")
+            {
+                Thread thread = new Thread(new ThreadStart(() =>
+                {
+                    FrmGVTrangChu frm = new FrmGVTrangChu();
+                    frm.ShowDialog();
+                }));
+                thread.Start();
+                Thread.Sleep(100);
+                this.Close();
+            }
+            else if (txtTenDangNhap.Text == "student" && txtPassword.Text == "student")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng ! Vui lòng liên hệ anh Chu Thương để biết thêm chi tiết.");
+            }
         }
     }
 }
