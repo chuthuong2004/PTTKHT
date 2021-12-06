@@ -16,6 +16,79 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
+        private void ShowForm(Form frm)
+        {
+            Thread thread = new Thread(new ThreadStart(()=>
+            {
+                frm.ShowDialog();
+            }));
+            thread.Start();
+            Thread.Sleep(100);
+            this.Close();
+        }
+        private void lblTrangChu_Click(object sender, EventArgs e)
+        {
+            FrmAdTrangChu frm = new FrmAdTrangChu();
+            ShowForm(frm);
+        }
+
+        private void lblThongBaoChung_Click(object sender, EventArgs e)
+        {
+            FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
+            ShowForm(frm);
+        }
+
+        private void lblThongTinTruong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
+        {
+            //FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
+            //ShowForm(frm);
+        }
+
+        private void lblLopHoc_Click(object sender, EventArgs e)
+        {
+            //FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
+            //ShowForm(frm);
+        }
+
+        private void lblPhongHoc_Click(object sender, EventArgs e)
+        {
+            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
+            ShowForm(frm);
+        }
+        private void lblGiaoVien_Click(object sender, EventArgs e)
+        {
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
+        }
+
+        private void lblHocSinh_Click(object sender, EventArgs e)
+        {
+            //FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            //ShowForm(frm);
+        }
+
+        private void lblToBoMon_Click(object sender, EventArgs e)
+        {
+            FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
+            ShowForm(frm);
+        }
+
+        private void lblThongBao_Click(object sender, EventArgs e)
+        {
+            FrmAdThongBao frm = new FrmAdThongBao();
+            ShowForm(frm);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAdSuaThongTinTruongHoc frm = new FrmAdSuaThongTinTruongHoc();
+            ShowForm(frm);
+        }
 
         private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -67,110 +140,5 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = true;
         }
 
-        private void lblTrangChu_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormTrangChu));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormTrangChu()
-        {
-            FrmAdTrangChu frmAdTrangChu = new FrmAdTrangChu();
-            frmAdTrangChu.ShowDialog();
-        }
-
-        private void lblThongBaoChung_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormThongBaoChung));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormThongBaoChung()
-        {
-            FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
-            frm.ShowDialog();
-        }
-
-        private void lblThongTinTruong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLopHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPhongHoc_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormDanhSachPhongHoc));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormDanhSachPhongHoc()
-        {
-            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
-            frm.ShowDialog();
-        }
-
-        private void lblGiaoVien_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblHocSinh_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblToBoMon_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormToBoMon));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormToBoMon()
-        {
-            FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
-            frm.ShowDialog();
-        }
-
-        private void lblThongBao_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormThongBao));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormThongBao()
-        {
-            FrmAdThongBao frm = new FrmAdThongBao();
-            frm.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread( new ThreadStart(()=>{
-                FrmAdSuaThongTinTruongHoc frmAdSuaThongTinTruongHoc = new FrmAdSuaThongTinTruongHoc();
-                frmAdSuaThongTinTruongHoc.ShowDialog();
-            }));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
     }
 }

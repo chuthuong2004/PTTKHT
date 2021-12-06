@@ -16,7 +16,16 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
-
+        private void ShowForm(Form frm)
+        {
+            Thread thread = new Thread(new ThreadStart(() =>
+            {
+                frm.ShowDialog();
+            }));
+            thread.Start();
+            Thread.Sleep(100);
+            this.Close();
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -24,14 +33,8 @@ namespace UI_PTTKHT
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(() =>
-            {
-                FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
-                frm.ShowDialog();
-            }));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
+            FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
+            ShowForm(frm);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -31,6 +31,7 @@ namespace UI_PTTKHT
         {
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lsbAdmin = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@ namespace UI_PTTKHT
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lsbAdmin = new System.Windows.Forms.ListBox();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -67,6 +67,7 @@ namespace UI_PTTKHT
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
             this.label7.Location = new System.Drawing.Point(713, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
@@ -80,12 +81,29 @@ namespace UI_PTTKHT
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.lsbAdmin);
             this.panel3.Controls.Add(this.groupBox1);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(645, 467);
             this.panel3.TabIndex = 8;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
+            // 
+            // lsbAdmin
+            // 
+            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lsbAdmin.FormattingEnabled = true;
+            this.lsbAdmin.ItemHeight = 16;
+            this.lsbAdmin.Items.AddRange(new object[] {
+            "Sửa",
+            "Đổi Mật Khẩu",
+            "Thoát"});
+            this.lsbAdmin.Location = new System.Drawing.Point(525, -3);
+            this.lsbAdmin.Name = "lsbAdmin";
+            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
+            this.lsbAdmin.TabIndex = 10;
+            this.lsbAdmin.Visible = false;
+            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -322,7 +340,7 @@ namespace UI_PTTKHT
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo;
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 51);
@@ -332,6 +350,7 @@ namespace UI_PTTKHT
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
             this.pictureBox1.Location = new System.Drawing.Point(764, 8);
             this.pictureBox1.Name = "pictureBox1";
@@ -340,21 +359,6 @@ namespace UI_PTTKHT
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lsbAdmin
-            // 
-            this.lsbAdmin.FormattingEnabled = true;
-            this.lsbAdmin.ItemHeight = 16;
-            this.lsbAdmin.Items.AddRange(new object[] {
-            "Sửa",
-            "Đổi Mật Khẩu",
-            "Thoát"});
-            this.lsbAdmin.Location = new System.Drawing.Point(525, -3);
-            this.lsbAdmin.Name = "lsbAdmin";
-            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
-            this.lsbAdmin.TabIndex = 10;
-            this.lsbAdmin.Visible = false;
-            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
             // 
             // FrmAdThongBaoChung
             // 
@@ -368,7 +372,7 @@ namespace UI_PTTKHT
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdThongBaoChung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FrmAdThongBaoChung";
+            this.Text = "Thông Báo Chung";
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -10,90 +10,63 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
-
-        private void label8_Click(object sender, EventArgs e)
+        private void ShowForm(Form frm)
         {
-           
-        }
-        private void ShowFormTrangChu()
-        {
-            FrmAdTrangChu frm = new FrmAdTrangChu();
-            frm.ShowDialog();
-        }
-        private void ShowFormDanhSachPhongHoc()
-        {
-            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
-            frm.ShowDialog();
-        }
-        private void ShowFormThongBao()
-        {
-            FrmAdThongBao frm = new FrmAdThongBao();
-            frm.ShowDialog();
-        }
-
-        private void ShowFormThongBaoChung()
-        {
-            FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
-            frm.ShowDialog();
-        }
-
-        private void lblTrangChu_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(ShowFormTrangChu));
+            Thread thread = new Thread(new ThreadStart(()=>
+            {
+                frm.ShowDialog();
+            }));
             thread.Start();
             Thread.Sleep(100);
             this.Close();
+        }
+        private void lblTrangChu_Click(object sender, EventArgs e)
+        {
+            FrmAdTrangChu frm = new FrmAdTrangChu();
+            ShowForm(frm);
         }
 
         private void lblThongBaoChung_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(ShowFormThongBaoChung));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
+            FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
+            ShowForm(frm);
         }
 
 
         private void lblThongTinTruong_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(ShowFormThongTinTruong));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void ShowFormThongTinTruong()
-        {
             FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
-            frm.ShowDialog();
+            ShowForm(frm);
         }
 
         private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
         {
-
+            //FrmAdTrangChu frm = new FrmAdTrangChu();
+            //ShowForm(frm);
         }
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-
+            //FrmAdTrangChu frm = new FrmAdTrangChu();
+            //ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(ShowFormDanhSachPhongHoc));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
+            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
+            ShowForm(frm);
         }
 
         private void lblGiaoVien_Click(object sender, EventArgs e)
         {
-
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
         }
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-
+            FrmAdTrangChu frm = new FrmAdTrangChu();
+            ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
@@ -103,15 +76,8 @@ namespace UI_PTTKHT
 
         private void lblThongBao_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(ShowFormThongBao));
-            thread.Start();
-            Thread.Sleep(100);
-            this.Close();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            FrmAdThongBao frm = new FrmAdThongBao();
+            ShowForm(frm);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

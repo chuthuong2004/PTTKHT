@@ -49,9 +49,6 @@ E:\PTTKHT\New folder\UI_PTTKHT\bin\Debug\UI_PTTKHT.exe
 E:\PTTKHT\New folder\UI_PTTKHT\bin\Debug\UI_PTTKHT.pdb
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.AssemblyReference.cache
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhap.resources
-E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapGiaoVien.resources
-E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmDangNhapHocSinh.resources
-E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGiaoVien.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.Properties.Resources.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.GenerateResource.cache
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.csproj.CoreCompileInputs.cache
@@ -99,3 +96,4 @@ E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmGVTrangChu.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdDanhSachPhongHoc.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdTrangChu.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdThongBao.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdGiaoVien.resources

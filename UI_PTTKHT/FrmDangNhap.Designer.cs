@@ -38,6 +38,7 @@ namespace UI_PTTKHT
             // 
             // btnDangNhap
             // 
+            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDangNhap.Location = new System.Drawing.Point(196, 124);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(98, 30);
@@ -94,7 +95,7 @@ namespace UI_PTTKHT
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng nhập";
+            this.Text = "Đăng Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 

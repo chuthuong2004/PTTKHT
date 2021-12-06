@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdThongBao : Form
+    public partial class FrmAdGiaoVien : Form
     {
-        public FrmAdThongBao()
+        public FrmAdGiaoVien()
         {
             InitializeComponent();
         }
@@ -26,7 +26,6 @@ namespace UI_PTTKHT
             Thread.Sleep(100);
             this.Close();
         }
-
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
             FrmAdTrangChu frm = new FrmAdTrangChu();
@@ -47,13 +46,13 @@ namespace UI_PTTKHT
 
         private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
+            //FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
             //ShowForm(frm);
         }
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
+            //FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
             //ShowForm(frm);
         }
 
@@ -65,13 +64,11 @@ namespace UI_PTTKHT
 
         private void lblGiaoVien_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
         }
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
+            //FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
             //ShowForm(frm);
         }
 
@@ -80,12 +77,13 @@ namespace UI_PTTKHT
             FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
             ShowForm(frm);
         }
-
         private void lblThongBao_Click(object sender, EventArgs e)
         {
-
+            FrmAdThongBao frm = new FrmAdThongBao();
+            ShowForm(frm);
         }
-        private void lblUser_Click(object sender, EventArgs e)
+
+        private void label11_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
         }
@@ -93,6 +91,31 @@ namespace UI_PTTKHT
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void flowLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
         }
 
         private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,36 +142,5 @@ namespace UI_PTTKHT
                 this.Close();
             }
         }
-
-        private void panel1_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void flowLayoutPanel1_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void flowLayoutPanel2_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void panel4_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

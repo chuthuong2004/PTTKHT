@@ -44,6 +44,8 @@ namespace UI_PTTKHT
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,19 +57,17 @@ namespace UI_PTTKHT
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lsbAdmin = new System.Windows.Forms.ListBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -216,6 +216,7 @@ namespace UI_PTTKHT
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
             this.label7.Location = new System.Drawing.Point(713, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
@@ -238,12 +239,35 @@ namespace UI_PTTKHT
             this.panel1.TabIndex = 6;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
+            this.pictureBox1.Location = new System.Drawing.Point(764, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.lsbAdmin);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
@@ -274,6 +298,7 @@ namespace UI_PTTKHT
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Location = new System.Drawing.Point(237, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 23);
@@ -288,7 +313,7 @@ namespace UI_PTTKHT
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(16, 151);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(326, 16);
+            this.label11.Size = new System.Drawing.Size(322, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "30-32, Lê Thị Hoa, Bình Đa, Tp. Biên Hòa, ĐN.";
             // 
@@ -308,7 +333,7 @@ namespace UI_PTTKHT
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(151, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(216, 16);
+            this.label6.Size = new System.Drawing.Size(213, 16);
             this.label6.TabIndex = 0;
             this.label6.Text = "Trường THCS - TPHT Bình Đa";
             // 
@@ -358,6 +383,16 @@ namespace UI_PTTKHT
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã trường:";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.logo1;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 93);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(239, 196);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -371,6 +406,7 @@ namespace UI_PTTKHT
             // 
             // lsbAdmin
             // 
+            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Default;
             this.lsbAdmin.FormattingEnabled = true;
             this.lsbAdmin.ItemHeight = 16;
             this.lsbAdmin.Items.AddRange(new object[] {
@@ -384,37 +420,6 @@ namespace UI_PTTKHT
             this.lsbAdmin.Visible = false;
             this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.logo;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 93);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(239, 196);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(764, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // FrmAdThongTinTruong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -427,18 +432,18 @@ namespace UI_PTTKHT
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdThongTinTruong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Thông tin trường học";
+            this.Text = "Thông Tin Trường Học";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

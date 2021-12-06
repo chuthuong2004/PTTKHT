@@ -145,6 +145,7 @@ namespace UI_PTTKHT
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
@@ -154,6 +155,7 @@ namespace UI_PTTKHT
             // 
             // lsbAdmin
             // 
+            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lsbAdmin.FormattingEnabled = true;
             this.lsbAdmin.ItemHeight = 16;
             this.lsbAdmin.Items.AddRange(new object[] {
@@ -170,6 +172,7 @@ namespace UI_PTTKHT
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Maroon;
             this.label6.Location = new System.Drawing.Point(498, 29);
@@ -178,10 +181,12 @@ namespace UI_PTTKHT
             this.label6.TabIndex = 5;
             this.label6.Text = "PHÒNG HỌC";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Navy;
             this.label11.Location = new System.Drawing.Point(340, 27);
@@ -194,6 +199,7 @@ namespace UI_PTTKHT
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Green;
             this.label4.Location = new System.Drawing.Point(182, 28);
@@ -202,16 +208,18 @@ namespace UI_PTTKHT
             this.label4.TabIndex = 3;
             this.label4.Text = "GIÁO VIÊN";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(390, 79);
+            this.label10.Location = new System.Drawing.Point(381, 79);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 25);
+            this.label10.Size = new System.Drawing.Size(55, 37);
             this.label10.TabIndex = 2;
             this.label10.Text = "63";
             // 
@@ -219,11 +227,12 @@ namespace UI_PTTKHT
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(60, 79);
+            this.label3.Location = new System.Drawing.Point(43, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
+            this.label3.Size = new System.Drawing.Size(91, 37);
             this.label3.TabIndex = 2;
             this.label3.Text = "1200";
             // 
@@ -231,29 +240,34 @@ namespace UI_PTTKHT
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(544, 79);
+            this.label9.Location = new System.Drawing.Point(535, 79);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 25);
+            this.label9.Size = new System.Drawing.Size(55, 37);
             this.label9.TabIndex = 2;
             this.label9.Text = "50";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(229, 79);
+            this.label5.Location = new System.Drawing.Point(222, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 25);
+            this.label5.Size = new System.Drawing.Size(55, 37);
             this.label5.TabIndex = 2;
             this.label5.Text = "96";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Olive;
             this.label2.Location = new System.Drawing.Point(24, 28);
@@ -265,6 +279,7 @@ namespace UI_PTTKHT
             // 
             // textBox4
             // 
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox4.Location = new System.Drawing.Point(338, 26);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -273,6 +288,7 @@ namespace UI_PTTKHT
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox1.Location = new System.Drawing.Point(22, 26);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -281,19 +297,23 @@ namespace UI_PTTKHT
             // 
             // textBox3
             // 
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox3.Location = new System.Drawing.Point(495, 26);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(133, 106);
             this.textBox3.TabIndex = 0;
+            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
             // 
             // textBox2
             // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox2.Location = new System.Drawing.Point(179, 26);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(133, 106);
             this.textBox2.TabIndex = 0;
+            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
             // 
             // lblGiaoVien
             // 
@@ -391,7 +411,7 @@ namespace UI_PTTKHT
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo;
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 51);
@@ -402,6 +422,7 @@ namespace UI_PTTKHT
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Location = new System.Drawing.Point(713, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
@@ -412,6 +433,7 @@ namespace UI_PTTKHT
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
             this.pictureBox1.Location = new System.Drawing.Point(764, 8);
             this.pictureBox1.Name = "pictureBox1";
@@ -433,7 +455,7 @@ namespace UI_PTTKHT
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Trang chủ";
+            this.Text = "Trang Chủ";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
