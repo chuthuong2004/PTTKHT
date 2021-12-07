@@ -132,6 +132,8 @@ namespace UI_PTTKHT
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnThemGiaoVien = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblQLHT = new System.Windows.Forms.Label();
+            this.lblTongKetDiem = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -231,7 +233,7 @@ namespace UI_PTTKHT
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.flowLayoutPanel1.Controls.Add(this.lblTrangChu);
             this.flowLayoutPanel1.Controls.Add(this.lblThongBaoChung);
             this.flowLayoutPanel1.Controls.Add(this.lblThongTinTruong);
@@ -250,6 +252,9 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Controls.Add(this.lblTietHoc);
             this.flowLayoutPanel1.Controls.Add(this.lblLichNgay);
             this.flowLayoutPanel1.Controls.Add(this.lblLichTuan);
+            this.flowLayoutPanel1.Controls.Add(this.lblQLHT);
+            this.flowLayoutPanel1.Controls.Add(this.lblTongKetDiem);
+            this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -342,7 +347,6 @@ namespace UI_PTTKHT
             this.lblHocSinh.Text = "Học sinh";
             this.lblHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblHocSinh.Visible = false;
-            this.lblHocSinh.Click += new System.EventHandler(this.lblHocSinh_Click);
             // 
             // lblToBoMon
             // 
@@ -1419,6 +1423,32 @@ namespace UI_PTTKHT
             this.label7.TabIndex = 0;
             this.label7.Text = "Danh sách học sinh";
             // 
+            // lblQLHT
+            // 
+            this.flowLayoutPanel1.SetFlowBreak(this.lblQLHT, true);
+            this.lblQLHT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQLHT.ImageKey = "(none)";
+            this.lblQLHT.Location = new System.Drawing.Point(3, 468);
+            this.lblQLHT.Name = "lblQLHT";
+            this.lblQLHT.Size = new System.Drawing.Size(153, 26);
+            this.lblQLHT.TabIndex = 14;
+            this.lblQLHT.Text = "Quản lý học tập";
+            this.lblQLHT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQLHT.Click += new System.EventHandler(this.lblQLHT_Click);
+            // 
+            // lblTongKetDiem
+            // 
+            this.lblTongKetDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTongKetDiem.ImageKey = "(none)";
+            this.lblTongKetDiem.Location = new System.Drawing.Point(3, 494);
+            this.lblTongKetDiem.Name = "lblTongKetDiem";
+            this.lblTongKetDiem.Size = new System.Drawing.Size(153, 26);
+            this.lblTongKetDiem.TabIndex = 15;
+            this.lblTongKetDiem.Text = "Tổng kết điểm";
+            this.lblTongKetDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTongKetDiem.Visible = false;
+            this.lblTongKetDiem.Click += new System.EventHandler(this.lblTongKetDiem_Click);
+            // 
             // FrmAdHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1432,7 +1462,6 @@ namespace UI_PTTKHT
             this.Name = "FrmAdHocSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Học Sinh";
-            this.Load += new System.EventHandler(this.FrmAdHocSinh_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1566,5 +1595,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label lblTietHoc;
         private System.Windows.Forms.Label lblLichNgay;
         private System.Windows.Forms.Label lblLichTuan;
+        private System.Windows.Forms.Label lblQLHT;
+        private System.Windows.Forms.Label lblTongKetDiem;
     }
 }

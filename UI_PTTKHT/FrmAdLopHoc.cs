@@ -70,11 +70,6 @@ namespace UI_PTTKHT
             }
         }
 
-        private void lblLopHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblPhongHoc_Click(object sender, EventArgs e)
         {
             FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
@@ -134,12 +129,14 @@ namespace UI_PTTKHT
 
         private void lblNamHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdNamHoc frm = new FrmAdNamHoc();
+            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdMonHoc frm = new FrmAdMonHoc();
+            ShowForm(frm);
         }
 
         private void lblXepHang_Click(object sender, EventArgs e)
@@ -149,12 +146,14 @@ namespace UI_PTTKHT
 
         private void lblHanhKiem_Click(object sender, EventArgs e)
         {
-
+            FrmAdHanhKiem frm = new FrmAdHanhKiem();
+            ShowForm(frm);
         }
 
         private void lblTietHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdTietHoc frm = new FrmAdTietHoc();
+            ShowForm(frm);
         }
 
         private void lblLichNgay_Click(object sender, EventArgs e)
@@ -258,10 +257,6 @@ namespace UI_PTTKHT
             MessageBox.Show("Chức năng xóa đang bảo trì !");
         }
 
-        private void FrmAdLopHoc_Load(object sender, EventArgs e)
-        {
-        }
-
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng tìm kiếm đang bảo trì !");
@@ -271,9 +266,28 @@ namespace UI_PTTKHT
         {
             MessageBox.Show("Chức năng thêm lớp học đăng bảo trì !");
         }
+
         private void textBox1_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
+        }
+
+        private void lblQLHT_Click(object sender, EventArgs e)
+        {
+            if (lblTongKetDiem.Visible)
+            {
+                lblTongKetDiem.Visible = false;
+            }
+            else
+            {
+                lblTongKetDiem.Visible = true;
+            }
+        }
+
+        private void lblTongKetDiem_Click(object sender, EventArgs e)
+        {
+            FrmAdTongKetDiem frm = new FrmAdTongKetDiem();
+            ShowForm(frm);
         }
     }
 }

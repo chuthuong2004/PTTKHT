@@ -52,6 +52,12 @@
     <Compile Include="FrmAdGiaoVien.Designer.cs">
       <DependentUpon>FrmAdGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAdHanhKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdHanhKiem.Designer.cs">
+      <DependentUpon>FrmAdHanhKiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,18 @@
     </Compile>
     <Compile Include="FrmAdLopHoc.Designer.cs">
       <DependentUpon>FrmAdLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdMonHoc.Designer.cs">
+      <DependentUpon>FrmAdMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdNamHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdNamHoc.Designer.cs">
+      <DependentUpon>FrmAdNamHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAdSuaThongTinGiaoVien.cs">
       <SubType>Form</SubType>
@@ -105,6 +123,18 @@
     </Compile>
     <Compile Include="FrmAdDanhSachToBoMon.Designer.cs">
       <DependentUpon>FrmAdDanhSachToBoMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdTietHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdTietHoc.Designer.cs">
+      <DependentUpon>FrmAdTietHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdTongKetDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdTongKetDiem.Designer.cs">
+      <DependentUpon>FrmAdTongKetDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDangNhap.cs">
       <SubType>Form</SubType>
@@ -153,6 +183,9 @@
     <EmbeddedResource Include="FrmAdGiaoVien.resx">
       <DependentUpon>FrmAdGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdHanhKiem.resx">
+      <DependentUpon>FrmAdHanhKiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdHocSinh.resx">
       <DependentUpon>FrmAdHocSinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdLopHoc.resx">
       <DependentUpon>FrmAdLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdMonHoc.resx">
+      <DependentUpon>FrmAdMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdNamHoc.resx">
+      <DependentUpon>FrmAdNamHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdSuaThongTinGiaoVien.resx">
       <DependentUpon>FrmAdSuaThongTinGiaoVien.cs</DependentUpon>
@@ -179,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdDanhSachToBoMon.resx">
       <DependentUpon>FrmAdDanhSachToBoMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdTietHoc.resx">
+      <DependentUpon>FrmAdTietHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdTongKetDiem.resx">
+      <DependentUpon>FrmAdTongKetDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>

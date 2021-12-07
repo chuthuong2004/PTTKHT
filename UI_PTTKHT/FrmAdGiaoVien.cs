@@ -16,6 +16,7 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
+
         private void ShowForm(Form frm)
         {
             Thread thread = new Thread(new ThreadStart(() =>
@@ -26,6 +27,7 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
+
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
             FrmAdTrangChu frm = new FrmAdTrangChu();
@@ -95,16 +97,11 @@ namespace UI_PTTKHT
             FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
             ShowForm(frm);
         }
+
         private void lblThongBao_Click(object sender, EventArgs e)
         {
             FrmAdThongBao frm = new FrmAdThongBao();
             ShowForm(frm);
-        }
-
-
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
         }
 
         private void lblQLDT_Click(object sender, EventArgs e)
@@ -136,12 +133,14 @@ namespace UI_PTTKHT
 
         private void lblNamHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdNamHoc frm = new FrmAdNamHoc();
+            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdMonHoc frm = new FrmAdMonHoc();
+            ShowForm(frm);
         }
 
         private void lblXepHang_Click(object sender, EventArgs e)
@@ -151,12 +150,14 @@ namespace UI_PTTKHT
 
         private void lblHanhKiem_Click(object sender, EventArgs e)
         {
-
+            FrmAdHanhKiem frm = new FrmAdHanhKiem();
+            ShowForm(frm);
         }
 
         private void lblTietHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdTietHoc frm = new FrmAdTietHoc();
+            ShowForm(frm);
         }
 
         private void lblLichNgay_Click(object sender, EventArgs e)
@@ -265,7 +266,6 @@ namespace UI_PTTKHT
             ShowForm(frm);
         }
 
-
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
@@ -275,47 +275,59 @@ namespace UI_PTTKHT
         private void pictureBox6_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
         }
 
         private void pictureBox12_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
         }
 
         private void pictureBox21_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng tìm kiếm dang bảo trì !");
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void lblQLHT_Click(object sender, EventArgs e)
+        {
+            if (lblTongKetDiem.Visible)
+            {
+                lblTongKetDiem.Visible = false;
+            }
+            else
+            {
+                lblTongKetDiem.Visible = true;
+            }
+        }
+
+        private void lblTongKetDiem_Click(object sender, EventArgs e)
+        {
+            FrmAdTongKetDiem frm = new FrmAdTongKetDiem();
+            ShowForm(frm);
         }
     }
 }

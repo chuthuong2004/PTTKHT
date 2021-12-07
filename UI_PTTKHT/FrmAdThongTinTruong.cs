@@ -16,6 +16,7 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
+
         private void ShowForm(Form frm)
         {
             Thread thread = new Thread(new ThreadStart(() =>
@@ -26,6 +27,7 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
+
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
             FrmAdTrangChu frm = new FrmAdTrangChu();
@@ -36,11 +38,6 @@ namespace UI_PTTKHT
         {
             FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
             ShowForm(frm);
-        }
-
-        private void lblThongTinTruong_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
@@ -78,6 +75,7 @@ namespace UI_PTTKHT
             FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
             ShowForm(frm);
         }
+
         private void lblGiaoVien_Click(object sender, EventArgs e)
         {
             FrmAdGiaoVien frm = new FrmAdGiaoVien();
@@ -132,12 +130,14 @@ namespace UI_PTTKHT
 
         private void lblNamHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdNamHoc frm = new FrmAdNamHoc();
+            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdMonHoc frm = new FrmAdMonHoc();
+            ShowForm(frm);
         }
 
         private void lblXepHang_Click(object sender, EventArgs e)
@@ -147,12 +147,14 @@ namespace UI_PTTKHT
 
         private void lblHanhKiem_Click(object sender, EventArgs e)
         {
-
+            FrmAdHanhKiem frm = new FrmAdHanhKiem();
+            ShowForm(frm);
         }
 
         private void lblTietHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdTietHoc frm = new FrmAdTietHoc();
+            ShowForm(frm);
         }
 
         private void lblLichNgay_Click(object sender, EventArgs e)
@@ -166,6 +168,7 @@ namespace UI_PTTKHT
             FrmAdLichHocTheoTuan frm = new FrmAdLichHocTheoTuan();
             ShowForm(frm);
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             FrmAdSuaThongTinTruongHoc frm = new FrmAdSuaThongTinTruongHoc();
@@ -216,8 +219,22 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = true;
         }
 
-        private void FrmAdThongTinTruong_Load(object sender, EventArgs e)
+        private void lblQLHT_Click(object sender, EventArgs e)
         {
+            if (lblTongKetDiem.Visible)
+            {
+                lblTongKetDiem.Visible = false;
+            }
+            else
+            {
+                lblTongKetDiem.Visible = true;
+            }
+        }
+
+        private void lblTongKetDiem_Click(object sender, EventArgs e)
+        {
+            FrmAdTongKetDiem frm = new FrmAdTongKetDiem();
+            ShowForm(frm);
         }
     }
 }

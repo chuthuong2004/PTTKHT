@@ -16,6 +16,7 @@ namespace UI_PTTKHT
         {
             InitializeComponent();
         }
+
         private void ShowForm(Form frm)
         {
             Thread thread = new Thread(new ThreadStart(() =>
@@ -26,6 +27,7 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
+
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
             FrmAdTrangChu frm = new FrmAdTrangChu();
@@ -133,12 +135,14 @@ namespace UI_PTTKHT
 
         private void lblNamHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdNamHoc frm = new FrmAdNamHoc();
+            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdMonHoc frm = new FrmAdMonHoc();
+            ShowForm(frm);
         }
 
         private void lblXepHang_Click(object sender, EventArgs e)
@@ -146,9 +150,16 @@ namespace UI_PTTKHT
 
         }
 
+        private void lblTietHoc_Click(object sender, EventArgs e)
+        {
+            FrmAdTietHoc frmAdTietHoc = new FrmAdTietHoc();
+            ShowForm(frmAdTietHoc);
+        }
+
         private void lblHanhKiem_Click(object sender, EventArgs e)
         {
-
+            FrmAdHanhKiem frm = new FrmAdHanhKiem();
+            ShowForm(frm);
         }
 
         private void lblLichTuan_Click(object sender, EventArgs e)
@@ -199,6 +210,24 @@ namespace UI_PTTKHT
         private void flowLayoutPanel1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
+        }
+
+        private void lblQLHT_Click(object sender, EventArgs e)
+        {
+            if (lblTongKetDiem.Visible)
+            {
+                lblTongKetDiem.Visible = false;
+            }
+            else
+            {
+                lblTongKetDiem.Visible = true;
+            }
+        }
+
+        private void lblTongKetDiem_Click(object sender, EventArgs e)
+        {
+            FrmAdTongKetDiem frm = new FrmAdTongKetDiem();
+            ShowForm(frm);
         }
     }
 }

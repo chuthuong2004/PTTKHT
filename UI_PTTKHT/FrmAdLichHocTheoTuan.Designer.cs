@@ -82,15 +82,17 @@ namespace UI_PTTKHT
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lsbAdmin = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnThemGiaoVien = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblQLHT = new System.Windows.Forms.Label();
+            this.lblTongKetDiem = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -181,6 +183,8 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Controls.Add(this.lblTietHoc);
             this.flowLayoutPanel1.Controls.Add(this.lblLichNgay);
             this.flowLayoutPanel1.Controls.Add(this.lblLichTuan);
+            this.flowLayoutPanel1.Controls.Add(this.lblQLHT);
+            this.flowLayoutPanel1.Controls.Add(this.lblTongKetDiem);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
@@ -868,6 +872,15 @@ namespace UI_PTTKHT
             this.lsbAdmin.Visible = false;
             this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(288, 20);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(70, 16);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Chọn khối:";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -897,6 +910,23 @@ namespace UI_PTTKHT
             this.button2.TabIndex = 0;
             this.button2.Text = "Hiện tại";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.comboBox2.Location = new System.Drawing.Point(364, 16);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(57, 24);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.Text = "12";
             // 
             // button1
             // 
@@ -933,9 +963,9 @@ namespace UI_PTTKHT
             this.label2.ForeColor = System.Drawing.Color.Green;
             this.label2.Location = new System.Drawing.Point(6, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 25);
+            this.label2.Size = new System.Drawing.Size(207, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Lịch học theo ngày";
+            this.label2.Text = "Lịch học theo tuần";
             // 
             // btnThemGiaoVien
             // 
@@ -948,31 +978,31 @@ namespace UI_PTTKHT
             this.btnThemGiaoVien.Text = "+";
             this.btnThemGiaoVien.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // lblQLHT
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.comboBox2.Location = new System.Drawing.Point(364, 16);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(57, 24);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.Text = "12";
+            this.flowLayoutPanel1.SetFlowBreak(this.lblQLHT, true);
+            this.lblQLHT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQLHT.ImageKey = "(none)";
+            this.lblQLHT.Location = new System.Drawing.Point(3, 484);
+            this.lblQLHT.Name = "lblQLHT";
+            this.lblQLHT.Size = new System.Drawing.Size(153, 26);
+            this.lblQLHT.TabIndex = 14;
+            this.lblQLHT.Text = "Quản lý học tập";
+            this.lblQLHT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQLHT.Click += new System.EventHandler(this.lblQLHT_Click);
             // 
-            // label15
+            // lblTongKetDiem
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(288, 20);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 16);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Chọn khối:";
+            this.lblTongKetDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTongKetDiem.ImageKey = "(none)";
+            this.lblTongKetDiem.Location = new System.Drawing.Point(3, 510);
+            this.lblTongKetDiem.Name = "lblTongKetDiem";
+            this.lblTongKetDiem.Size = new System.Drawing.Size(153, 26);
+            this.lblTongKetDiem.TabIndex = 15;
+            this.lblTongKetDiem.Text = "Tổng kết điểm";
+            this.lblTongKetDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTongKetDiem.Visible = false;
+            this.lblTongKetDiem.Click += new System.EventHandler(this.lblTongKetDiem_Click);
             // 
             // FrmAdLichHocTheoTuan
             // 
@@ -1064,5 +1094,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblQLHT;
+        private System.Windows.Forms.Label lblTongKetDiem;
     }
 }

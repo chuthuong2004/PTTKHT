@@ -135,12 +135,14 @@ namespace UI_PTTKHT
 
         private void lblNamHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdNamHoc frm = new FrmAdNamHoc();
+            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdMonHoc frm = new FrmAdMonHoc();
+            ShowForm(frm);
         }
 
         private void lblXepHang_Click(object sender, EventArgs e)
@@ -150,12 +152,14 @@ namespace UI_PTTKHT
 
         private void lblHanhKiem_Click(object sender, EventArgs e)
         {
-
+            FrmAdHanhKiem frm = new FrmAdHanhKiem();
+            ShowForm(frm);
         }
 
         private void lblTietHoc_Click(object sender, EventArgs e)
         {
-
+            FrmAdTietHoc frm = new FrmAdTietHoc();
+            ShowForm(frm);
         }
 
         private void lblLichNgay_Click(object sender, EventArgs e)
@@ -206,6 +210,24 @@ namespace UI_PTTKHT
         private void panel4_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
+        }
+
+        private void lblQLHT_Click(object sender, EventArgs e)
+        {
+            if (lblTongKetDiem.Visible)
+            {
+                lblTongKetDiem.Visible = false;
+            }
+            else
+            {
+                lblTongKetDiem.Visible = true;
+            }
+        }
+
+        private void lblTongKetDiem_Click(object sender, EventArgs e)
+        {
+            FrmAdTongKetDiem frm = new FrmAdTongKetDiem();
+            ShowForm(frm);
         }
     }
 }

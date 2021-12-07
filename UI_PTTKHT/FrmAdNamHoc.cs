@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdDanhSachToBoMon : Form
+    public partial class FrmAdNamHoc : Form
     {
-        public FrmAdDanhSachToBoMon()
+        public FrmAdNamHoc()
         {
             InitializeComponent();
         }
@@ -84,13 +90,14 @@ namespace UI_PTTKHT
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            FrmAdTrangChu frm = new FrmAdTrangChu();
+            FrmAdHocSinh frm = new FrmAdHocSinh();
             ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
         {
-
+            FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
+            ShowForm(frm);
         }
 
         private void lblThongBao_Click(object sender, EventArgs e)
@@ -124,12 +131,6 @@ namespace UI_PTTKHT
                 lblLichNgay.Visible = true;
                 lblLichTuan.Visible = true;
             }
-        }
-
-        private void lblNamHoc_Click(object sender, EventArgs e)
-        {
-            FrmAdNamHoc frm = new FrmAdNamHoc();
-            ShowForm(frm);
         }
 
         private void lblMonHoc_Click(object sender, EventArgs e)
@@ -167,66 +168,6 @@ namespace UI_PTTKHT
             ShowForm(frm);
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng sửa đang bảo trì !");
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-        }
-
         private void label11_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
@@ -237,36 +178,7 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = true;
         }
 
-        private void panel5_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void panel1_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void panel4_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void flowLayoutPanel1_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void tableLayoutPanel1_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void FrmAdDanhSachToBoMon_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void lsbAdmin_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lsbAdmin.SelectedIndex == 0)
             {
@@ -285,19 +197,29 @@ namespace UI_PTTKHT
             }
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
+        private void panel2_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            lsbAdmin.Visible = false;
         }
 
-        private void pictureBox15_Click(object sender, EventArgs e)
+        private void panel4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng tìm kiếm tổ bộ môn đang bảo trì !");
+            lsbAdmin.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng thêm tổ bộ môn đang bảo trì !");
+            lsbAdmin.Visible = false;
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void flowLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
         }
 
         private void lblQLHT_Click(object sender, EventArgs e)
