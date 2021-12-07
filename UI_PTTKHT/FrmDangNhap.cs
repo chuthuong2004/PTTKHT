@@ -37,6 +37,14 @@ namespace UI_PTTKHT
             }
             else if (txtTenDangNhap.Text == "student" && txtPassword.Text == "student")
             {
+                Thread thread = new Thread(new ThreadStart(() =>
+                {
+                    FrmHSTrangChu frm = new FrmHSTrangChu();
+                    frm.ShowDialog();
+                }));
+                thread.Start();
+                Thread.Sleep(100);
+                this.Close();
 
             }
             else
