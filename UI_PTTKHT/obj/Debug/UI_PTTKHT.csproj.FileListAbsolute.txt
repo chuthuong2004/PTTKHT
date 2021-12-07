@@ -102,3 +102,5 @@ E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdSuaThongTinGiaoVien.resou
 E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdThemGiaoVien.resources
 E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdHocSinh.resources
 E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdLopHoc.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdLichHocTheoTuan.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdLichHocTheoNgay.resources

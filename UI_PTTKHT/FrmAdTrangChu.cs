@@ -80,6 +80,19 @@ namespace UI_PTTKHT
             ShowForm(frm);
         }
 
+        private void lblGiaoVien_Click(object sender, EventArgs e)
+        {
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
+        }
+
+        private void lblHocSinh_Click(object sender, EventArgs e)
+        {
+            FrmAdHocSinh frm = new FrmAdHocSinh();
+            ShowForm(frm);
+        }
+
+
         private void lblToBoMon_Click(object sender, EventArgs e)
         {
             FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
@@ -91,17 +104,31 @@ namespace UI_PTTKHT
             FrmAdThongBao frm = new FrmAdThongBao();
             ShowForm(frm);
         }
-
-        private void lblGiaoVien_Click(object sender, EventArgs e)
+        private void lblQLDT_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void lblHocSinh_Click(object sender, EventArgs e)
-        {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
+            Thread.Sleep(10);
+            if (lblNamHoc.Visible && lblMonHoc.Visible && lblXepHang.Visible &&
+                lblHanhKiem.Visible && lblTietHoc.Visible
+                && lblLichNgay.Visible && lblLichTuan.Visible)
+            {
+                lblNamHoc.Visible = false;
+                lblMonHoc.Visible = false;
+                lblXepHang.Visible = false;
+                lblHanhKiem.Visible = false;
+                lblTietHoc.Visible = false;
+                lblLichNgay.Visible = false;
+                lblLichTuan.Visible = false;
+            }
+            else
+            {
+                lblNamHoc.Visible = true;
+                lblMonHoc.Visible = true;
+                lblXepHang.Visible = true;
+                lblHanhKiem.Visible = true;
+                lblTietHoc.Visible = true;
+                lblLichNgay.Visible = true;
+                lblLichTuan.Visible = true;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -186,12 +213,6 @@ namespace UI_PTTKHT
 
         private void FrmAdTrangChu_Load(object sender, EventArgs e)
         {
-            lblLopHoc.Visible = false;
-            lblPhongHoc.Visible = false;
-            lblGiaoVien.Visible = false;
-            lblHocSinh.Visible = false;
-            lblToBoMon.Visible = false;
-            lblThongBao.Visible = false;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -245,6 +266,43 @@ namespace UI_PTTKHT
         private void label14_Click(object sender, EventArgs e)
         {
             FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
+        }
+
+        private void lblNamHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblXepHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHanhKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTietHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLichNgay_Click(object sender, EventArgs e)
+        {
+            FrmAdLichHocTheoNgay frm = new FrmAdLichHocTheoNgay();
+            ShowForm(frm);
+        }
+
+        private void lblLichTuan_Click(object sender, EventArgs e)
+        {
+            FrmAdLichHocTheoTuan frm = new FrmAdLichHocTheoTuan();
             ShowForm(frm);
         }
     }

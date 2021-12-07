@@ -46,6 +46,14 @@ namespace UI_PTTKHT
             this.lblHocSinh = new System.Windows.Forms.Label();
             this.lblToBoMon = new System.Windows.Forms.Label();
             this.lblThongBao = new System.Windows.Forms.Label();
+            this.lblQLDT = new System.Windows.Forms.Label();
+            this.lblNamHoc = new System.Windows.Forms.Label();
+            this.lblMonHoc = new System.Windows.Forms.Label();
+            this.lblXepHang = new System.Windows.Forms.Label();
+            this.lblHanhKiem = new System.Windows.Forms.Label();
+            this.lblTietHoc = new System.Windows.Forms.Label();
+            this.lblLichNgay = new System.Windows.Forms.Label();
+            this.lblLichTuan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -234,6 +242,14 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Controls.Add(this.lblHocSinh);
             this.flowLayoutPanel1.Controls.Add(this.lblToBoMon);
             this.flowLayoutPanel1.Controls.Add(this.lblThongBao);
+            this.flowLayoutPanel1.Controls.Add(this.lblQLDT);
+            this.flowLayoutPanel1.Controls.Add(this.lblNamHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblMonHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblXepHang);
+            this.flowLayoutPanel1.Controls.Add(this.lblHanhKiem);
+            this.flowLayoutPanel1.Controls.Add(this.lblTietHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblLichNgay);
+            this.flowLayoutPanel1.Controls.Add(this.lblLichTuan);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -290,6 +306,7 @@ namespace UI_PTTKHT
             this.lblLopHoc.TabIndex = 0;
             this.lblLopHoc.Text = "Lớp học";
             this.lblLopHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLopHoc.Visible = false;
             this.lblLopHoc.Click += new System.EventHandler(this.lblLopHoc_Click);
             // 
             // lblPhongHoc
@@ -301,6 +318,7 @@ namespace UI_PTTKHT
             this.lblPhongHoc.TabIndex = 0;
             this.lblPhongHoc.Text = "Phòng học";
             this.lblPhongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPhongHoc.Visible = false;
             this.lblPhongHoc.Click += new System.EventHandler(this.lblPhongHoc_Click);
             // 
             // lblGiaoVien
@@ -311,6 +329,7 @@ namespace UI_PTTKHT
             this.lblGiaoVien.TabIndex = 0;
             this.lblGiaoVien.Text = "Giáo viên";
             this.lblGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGiaoVien.Visible = false;
             this.lblGiaoVien.Click += new System.EventHandler(this.lblGiaoVien_Click);
             // 
             // lblHocSinh
@@ -322,6 +341,7 @@ namespace UI_PTTKHT
             this.lblHocSinh.TabIndex = 0;
             this.lblHocSinh.Text = "Học sinh";
             this.lblHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblHocSinh.Visible = false;
             this.lblHocSinh.Click += new System.EventHandler(this.lblHocSinh_Click);
             // 
             // lblToBoMon
@@ -332,6 +352,7 @@ namespace UI_PTTKHT
             this.lblToBoMon.TabIndex = 0;
             this.lblToBoMon.Text = "Tổ bộ môn";
             this.lblToBoMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblToBoMon.Visible = false;
             this.lblToBoMon.Click += new System.EventHandler(this.lblToBoMon_Click);
             // 
             // lblThongBao
@@ -342,7 +363,101 @@ namespace UI_PTTKHT
             this.lblThongBao.TabIndex = 0;
             this.lblThongBao.Text = "Thông báo";
             this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblThongBao.Visible = false;
             this.lblThongBao.Click += new System.EventHandler(this.lblThongBao_Click);
+            // 
+            // lblQLDT
+            // 
+            this.flowLayoutPanel1.SetFlowBreak(this.lblQLDT, true);
+            this.lblQLDT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQLDT.ImageKey = "(none)";
+            this.lblQLDT.Location = new System.Drawing.Point(3, 260);
+            this.lblQLDT.Name = "lblQLDT";
+            this.lblQLDT.Size = new System.Drawing.Size(153, 26);
+            this.lblQLDT.TabIndex = 10;
+            this.lblQLDT.Text = "Quản lý đào tạo";
+            this.lblQLDT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQLDT.Click += new System.EventHandler(this.lblQLDT_Click);
+            // 
+            // lblNamHoc
+            // 
+            this.lblNamHoc.Location = new System.Drawing.Point(3, 286);
+            this.lblNamHoc.Name = "lblNamHoc";
+            this.lblNamHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblNamHoc.TabIndex = 4;
+            this.lblNamHoc.Text = "Năm học";
+            this.lblNamHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNamHoc.Visible = false;
+            this.lblNamHoc.Click += new System.EventHandler(this.lblNamHoc_Click);
+            // 
+            // lblMonHoc
+            // 
+            this.lblMonHoc.Location = new System.Drawing.Point(3, 312);
+            this.lblMonHoc.Name = "lblMonHoc";
+            this.lblMonHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblMonHoc.TabIndex = 5;
+            this.lblMonHoc.Text = "Môn học";
+            this.lblMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMonHoc.Visible = false;
+            this.lblMonHoc.Click += new System.EventHandler(this.lblMonHoc_Click);
+            // 
+            // lblXepHang
+            // 
+            this.lblXepHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXepHang.Location = new System.Drawing.Point(3, 338);
+            this.lblXepHang.Name = "lblXepHang";
+            this.lblXepHang.Size = new System.Drawing.Size(153, 26);
+            this.lblXepHang.TabIndex = 6;
+            this.lblXepHang.Text = "Xếp hạng";
+            this.lblXepHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblXepHang.Visible = false;
+            this.lblXepHang.Click += new System.EventHandler(this.lblXepHang_Click);
+            // 
+            // lblHanhKiem
+            // 
+            this.lblHanhKiem.Location = new System.Drawing.Point(3, 364);
+            this.lblHanhKiem.Name = "lblHanhKiem";
+            this.lblHanhKiem.Size = new System.Drawing.Size(153, 26);
+            this.lblHanhKiem.TabIndex = 7;
+            this.lblHanhKiem.Text = "Hạnh kiểm";
+            this.lblHanhKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblHanhKiem.Visible = false;
+            this.lblHanhKiem.Click += new System.EventHandler(this.lblHanhKiem_Click);
+            // 
+            // lblTietHoc
+            // 
+            this.lblTietHoc.Location = new System.Drawing.Point(3, 390);
+            this.lblTietHoc.Name = "lblTietHoc";
+            this.lblTietHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblTietHoc.TabIndex = 8;
+            this.lblTietHoc.Text = "Tiết học";
+            this.lblTietHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTietHoc.Visible = false;
+            this.lblTietHoc.Click += new System.EventHandler(this.lblTietHoc_Click);
+            // 
+            // lblLichNgay
+            // 
+            this.lblLichNgay.Location = new System.Drawing.Point(3, 416);
+            this.lblLichNgay.Name = "lblLichNgay";
+            this.lblLichNgay.Size = new System.Drawing.Size(153, 26);
+            this.lblLichNgay.TabIndex = 9;
+            this.lblLichNgay.Text = "Lịch học theo ngày";
+            this.lblLichNgay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLichNgay.Visible = false;
+            this.lblLichNgay.Click += new System.EventHandler(this.lblLichNgay_Click);
+            // 
+            // lblLichTuan
+            // 
+            this.lblLichTuan.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLichTuan.ImageKey = "(none)";
+            this.lblLichTuan.Location = new System.Drawing.Point(3, 442);
+            this.lblLichTuan.Name = "lblLichTuan";
+            this.lblLichTuan.Size = new System.Drawing.Size(153, 26);
+            this.lblLichTuan.TabIndex = 11;
+            this.lblLichTuan.Text = "Lịch học theo tuần";
+            this.lblLichTuan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLichTuan.Visible = false;
+            this.lblLichTuan.Click += new System.EventHandler(this.lblLichTuan_Click);
             // 
             // panel3
             // 
@@ -1443,5 +1558,13 @@ namespace UI_PTTKHT
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnThemGiaoVien;
+        private System.Windows.Forms.Label lblQLDT;
+        private System.Windows.Forms.Label lblNamHoc;
+        private System.Windows.Forms.Label lblMonHoc;
+        private System.Windows.Forms.Label lblXepHang;
+        private System.Windows.Forms.Label lblHanhKiem;
+        private System.Windows.Forms.Label lblTietHoc;
+        private System.Windows.Forms.Label lblLichNgay;
+        private System.Windows.Forms.Label lblLichTuan;
     }
 }

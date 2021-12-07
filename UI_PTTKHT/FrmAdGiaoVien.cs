@@ -101,6 +101,76 @@ namespace UI_PTTKHT
             ShowForm(frm);
         }
 
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void lblQLDT_Click(object sender, EventArgs e)
+        {
+            Thread.Sleep(10);
+            if (lblNamHoc.Visible && lblMonHoc.Visible && lblXepHang.Visible &&
+                lblHanhKiem.Visible && lblTietHoc.Visible
+                && lblLichNgay.Visible && lblLichTuan.Visible)
+            {
+                lblNamHoc.Visible = false;
+                lblMonHoc.Visible = false;
+                lblXepHang.Visible = false;
+                lblHanhKiem.Visible = false;
+                lblTietHoc.Visible = false;
+                lblLichNgay.Visible = false;
+                lblLichTuan.Visible = false;
+            }
+            else
+            {
+                lblNamHoc.Visible = true;
+                lblMonHoc.Visible = true;
+                lblXepHang.Visible = true;
+                lblHanhKiem.Visible = true;
+                lblTietHoc.Visible = true;
+                lblLichNgay.Visible = true;
+                lblLichTuan.Visible = true;
+            }
+        }
+
+        private void lblNamHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblXepHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHanhKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTietHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLichNgay_Click(object sender, EventArgs e)
+        {
+            FrmAdLichHocTheoNgay frm = new FrmAdLichHocTheoNgay();
+            ShowForm(frm);
+        }
+
+        private void lblLichTuan_Click(object sender, EventArgs e)
+        {
+            FrmAdLichHocTheoTuan frm = new FrmAdLichHocTheoTuan();
+            ShowForm(frm);
+        }
+
         private void label11_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
@@ -157,12 +227,6 @@ namespace UI_PTTKHT
 
         private void FrmAdGiaoVien_Load(object sender, EventArgs e)
         {
-            lblLopHoc.Visible = false;
-            lblPhongHoc.Visible = false;
-            lblGiaoVien.Visible = false;
-            lblHocSinh.Visible = false;
-            lblToBoMon.Visible = false;
-            lblThongBao.Visible = false;
         }
 
         private void btnThemGiaoVien_Click(object sender, EventArgs e)
@@ -252,11 +316,6 @@ namespace UI_PTTKHT
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng tìm kiếm dang bảo trì !");
-        }
-
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
         }
     }
 }
