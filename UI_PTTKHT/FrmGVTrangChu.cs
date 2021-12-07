@@ -72,5 +72,9 @@ namespace UI_PTTKHT
             f.ShowDialog();
         }
 
+        private void FrmGVTrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

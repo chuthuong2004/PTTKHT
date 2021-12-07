@@ -23,7 +23,7 @@ namespace UI_PTTKHT
                 frm.ShowDialog();
             }));
             thread.Start();
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             this.Close();
         }
 
@@ -71,8 +71,8 @@ namespace UI_PTTKHT
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdLopHoc frm = new FrmAdLopHoc();
+            ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
@@ -89,8 +89,8 @@ namespace UI_PTTKHT
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdHocSinh frm = new FrmAdHocSinh();
+            ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
@@ -111,31 +111,6 @@ namespace UI_PTTKHT
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
-        }
-
-        private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lsbAdmin.SelectedIndex == 0)
-            {
-                MessageBox.Show("Phần sửa thông tin admin chưa được cập nhật !");
-                lsbAdmin.Visible = false;
-            }
-            else if (lsbAdmin.SelectedIndex == 1)
-            {
-                MessageBox.Show("Phần đổi mật khẩu chưa được cập nhật !");
-                lsbAdmin.Visible = false;
-            }
-            else if (lsbAdmin.SelectedIndex == 2)
-            {
-                Thread thread = new Thread(new ThreadStart(() =>
-                {
-                    FrmDangNhap frm = new FrmDangNhap();
-                    frm.ShowDialog();
-                }));
-                thread.Start();
-                Thread.Sleep(10);
-                this.Close();
-            }
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -176,6 +151,90 @@ namespace UI_PTTKHT
             lblHocSinh.Visible = false;
             lblToBoMon.Visible = false;
             lblThongBao.Visible = false;
+        }
+
+        private void lsbAdmin_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (lsbAdmin.SelectedIndex == 0)
+            {
+                MessageBox.Show("Phần sửa thông tin admin chưa được cập nhật !");
+                lsbAdmin.Visible = false;
+            }
+            else if (lsbAdmin.SelectedIndex == 1)
+            {
+                MessageBox.Show("Phần đổi mật khẩu chưa được cập nhật !");
+                lsbAdmin.Visible = false;
+            }
+            else if (lsbAdmin.SelectedIndex == 2)
+            {
+                FrmDangNhap frm = new FrmDangNhap();
+                ShowForm(frm);
+            }
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng tìm kiếm thông báo đang bảo trì !");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm thông báo đang bảo trì !");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa thông báo đang bảo trì !");
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa thông báo đang bảo trì !");
         }
     }
 }

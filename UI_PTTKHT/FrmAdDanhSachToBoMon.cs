@@ -12,12 +12,12 @@ namespace UI_PTTKHT
         }
         private void ShowForm(Form frm)
         {
-            Thread thread = new Thread(new ThreadStart(()=>
+            Thread thread = new Thread(new ThreadStart(() =>
             {
                 frm.ShowDialog();
             }));
             thread.Start();
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             this.Close();
         }
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -65,8 +65,8 @@ namespace UI_PTTKHT
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdLopHoc frm = new FrmAdLopHoc();
+            ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
@@ -158,31 +158,6 @@ namespace UI_PTTKHT
             MessageBox.Show("Chức năng xóa đang bảo trì !");
         }
 
-        private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lsbAdmin.SelectedIndex == 0)
-            {
-                MessageBox.Show("Phần sửa thông tin admin chưa được cập nhật !");
-                lsbAdmin.Visible = false;
-            }
-            else if (lsbAdmin.SelectedIndex == 1)
-            {
-                MessageBox.Show("Phần đổi mật khẩu chưa được cập nhật !");
-                lsbAdmin.Visible = false;
-            }
-            else if (lsbAdmin.SelectedIndex == 2)
-            {
-                Thread thread = new Thread(new ThreadStart(() =>
-                {
-                    FrmDangNhap frm = new FrmDangNhap();
-                    frm.ShowDialog();
-                }));
-                thread.Start();
-                Thread.Sleep(10);
-                this.Close();
-            }
-        }
-
         private void label11_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
@@ -226,6 +201,40 @@ namespace UI_PTTKHT
             lblHocSinh.Visible = false;
             lblToBoMon.Visible = false;
             lblThongBao.Visible = false;
+        }
+
+        private void lsbAdmin_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (lsbAdmin.SelectedIndex == 0)
+            {
+                MessageBox.Show("Phần sửa thông tin admin chưa được cập nhật !");
+                lsbAdmin.Visible = false;
+            }
+            else if (lsbAdmin.SelectedIndex == 1)
+            {
+                MessageBox.Show("Phần đổi mật khẩu chưa được cập nhật !");
+                lsbAdmin.Visible = false;
+            }
+            else if (lsbAdmin.SelectedIndex == 2)
+            {
+                FrmDangNhap frm = new FrmDangNhap();
+                ShowForm(frm);
+            }
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng tìm kiếm tổ bộ môn đang bảo trì !");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm tổ bộ môn đang bảo trì !");
         }
     }
 }

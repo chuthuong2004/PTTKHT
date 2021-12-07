@@ -98,3 +98,7 @@ E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdTrangChu.resources
 E:\PTTKHT\New folder\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdThongBao.resources
 E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdGiaoVien.resources
 E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmHSTrangChu.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdSuaThongTinGiaoVien.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdThemGiaoVien.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdHocSinh.resources
+E:\PTTKHT\UI_PTTKHT\UI_PTTKHT\obj\Debug\UI_PTTKHT.FrmAdLopHoc.resources

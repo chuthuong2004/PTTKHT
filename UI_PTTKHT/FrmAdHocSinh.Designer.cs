@@ -1,7 +1,7 @@
 ﻿
 namespace UI_PTTKHT
 {
-    partial class FrmAdGiaoVien
+    partial class FrmAdHocSinh
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,12 @@ namespace UI_PTTKHT
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lsbAdmin = new System.Windows.Forms.ListBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnThemGiaoVien = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lsbAdmin = new System.Windows.Forms.ListBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTrangChu = new System.Windows.Forms.Label();
             this.lblThongBaoChung = new System.Windows.Forms.Label();
@@ -50,10 +48,6 @@ namespace UI_PTTKHT
             this.lblThongBao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -71,7 +65,6 @@ namespace UI_PTTKHT
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label33 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -125,16 +118,18 @@ namespace UI_PTTKHT
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnThemGiaoVien = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -148,87 +143,23 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel4
+            // panel1
             // 
-            this.panel4.Controls.Add(this.lsbAdmin);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.btnThemGiaoVien);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(918, 52);
-            this.panel4.TabIndex = 2;
-            this.panel4.Click += new System.EventHandler(this.panel4_Click);
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // lsbAdmin
-            // 
-            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lsbAdmin.FormattingEnabled = true;
-            this.lsbAdmin.ItemHeight = 16;
-            this.lsbAdmin.Items.AddRange(new object[] {
-            "Sửa",
-            "Đổi Mật Khẩu",
-            "Thoát"});
-            this.lsbAdmin.Location = new System.Drawing.Point(786, 0);
-            this.lsbAdmin.Name = "lsbAdmin";
-            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
-            this.lsbAdmin.TabIndex = 9;
-            this.lsbAdmin.Visible = false;
-            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::UI_PTTKHT.Properties.Resources.search;
-            this.pictureBox4.Location = new System.Drawing.Point(830, 18);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(580, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 22);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Nhập từ khóa ...";
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(6, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(227, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Danh sách giáo viên";
-            // 
-            // btnThemGiaoVien
-            // 
-            this.btnThemGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemGiaoVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemGiaoVien.Location = new System.Drawing.Point(876, 15);
-            this.btnThemGiaoVien.Name = "btnThemGiaoVien";
-            this.btnThemGiaoVien.Size = new System.Drawing.Size(30, 29);
-            this.btnThemGiaoVien.TabIndex = 1;
-            this.btnThemGiaoVien.Text = "+";
-            this.btnThemGiaoVien.UseVisualStyleBackColor = true;
-            this.btnThemGiaoVien.Click += new System.EventHandler(this.btnThemGiaoVien_Click);
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1077, 51);
+            this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label11
             // 
@@ -242,6 +173,18 @@ namespace UI_PTTKHT
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
+            this.pictureBox1.Location = new System.Drawing.Point(1037, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -252,8 +195,35 @@ namespace UI_PTTKHT
             this.label1.TabIndex = 2;
             this.label1.Text = "Trường THCS - THPT Bình Đa";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lsbAdmin
+            // 
+            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lsbAdmin.FormattingEnabled = true;
+            this.lsbAdmin.ItemHeight = 16;
+            this.lsbAdmin.Items.AddRange(new object[] {
+            "Sửa",
+            "Đổi Mật Khẩu",
+            "Thoát"});
+            this.lsbAdmin.Location = new System.Drawing.Point(786, 0);
+            this.lsbAdmin.Name = "lsbAdmin";
+            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
+            this.lsbAdmin.TabIndex = 7;
+            this.lsbAdmin.Visible = false;
+            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
+            // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.flowLayoutPanel1.Controls.Add(this.lblTrangChu);
             this.flowLayoutPanel1.Controls.Add(this.lblThongBaoChung);
             this.flowLayoutPanel1.Controls.Add(this.lblThongTinTruong);
@@ -264,11 +234,11 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Controls.Add(this.lblHocSinh);
             this.flowLayoutPanel1.Controls.Add(this.lblToBoMon);
             this.flowLayoutPanel1.Controls.Add(this.lblThongBao);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 591);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
             // lblTrangChu
@@ -335,7 +305,6 @@ namespace UI_PTTKHT
             // 
             // lblGiaoVien
             // 
-            this.lblGiaoVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaoVien.Location = new System.Drawing.Point(3, 156);
             this.lblGiaoVien.Name = "lblGiaoVien";
             this.lblGiaoVien.Size = new System.Drawing.Size(153, 26);
@@ -346,6 +315,7 @@ namespace UI_PTTKHT
             // 
             // lblHocSinh
             // 
+            this.lblHocSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHocSinh.Location = new System.Drawing.Point(3, 182);
             this.lblHocSinh.Name = "lblHocSinh";
             this.lblHocSinh.Size = new System.Drawing.Size(153, 26);
@@ -356,7 +326,6 @@ namespace UI_PTTKHT
             // 
             // lblToBoMon
             // 
-            this.lblToBoMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToBoMon.Location = new System.Drawing.Point(3, 208);
             this.lblToBoMon.Name = "lblToBoMon";
             this.lblToBoMon.Size = new System.Drawing.Size(153, 26);
@@ -377,82 +346,38 @@ namespace UI_PTTKHT
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(918, 591);
-            this.panel3.TabIndex = 9;
+            this.panel3.TabIndex = 3;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.tableLayoutPanel1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 52);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(918, 539);
             this.panel5.TabIndex = 3;
-            this.panel5.Click += new System.EventHandler(this.panel5_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 493);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(918, 46);
-            this.panel6.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(63, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 29);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "1";
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(96, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 34);
-            this.button4.TabIndex = 3;
-            this.button4.Text = ">";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(8, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 34);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 10;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.007519F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.944135F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.88827F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.015039F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.944135F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.03008F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.784647F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.84727F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.769454F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.769454F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.007596F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.944364F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.88873F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.015193F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.944364F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.03039F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.78009F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.85012F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.769576F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.769576F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 8, 6);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 8, 5);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 8, 4);
@@ -469,7 +394,6 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 9, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 8, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 9, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label33, 0, 18);
             this.tableLayoutPanel1.Controls.Add(this.label23, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.label65, 6, 6);
             this.tableLayoutPanel1.Controls.Add(this.label64, 5, 6);
@@ -546,9 +470,8 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(918, 539);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // pictureBox10
@@ -556,103 +479,113 @@ namespace UI_PTTKHT
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox10.Location = new System.Drawing.Point(830, 186);
+            this.pictureBox10.Location = new System.Drawing.Point(831, 186);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(37, 20);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 119;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click_1);
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox7.Location = new System.Drawing.Point(830, 160);
+            this.pictureBox7.Location = new System.Drawing.Point(831, 160);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(37, 20);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 118;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click_1);
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox5.Location = new System.Drawing.Point(830, 134);
+            this.pictureBox5.Location = new System.Drawing.Point(831, 134);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(37, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 117;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label55.Location = new System.Drawing.Point(612, 183);
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label55.Location = new System.Drawing.Point(658, 183);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(212, 26);
+            this.label55.Size = new System.Drawing.Size(167, 26);
             this.label55.TabIndex = 115;
-            this.label55.Text = "chuthuong1080@gmail.com";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label55.Text = "Nguyễn Bá Vương";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label54
             // 
             this.label54.AutoSize = true;
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Location = new System.Drawing.Point(612, 157);
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label54.Location = new System.Drawing.Point(658, 157);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(212, 26);
+            this.label54.Size = new System.Drawing.Size(167, 26);
             this.label54.TabIndex = 114;
-            this.label54.Text = "chuthuong1080@gmail.com";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label54.Text = "Nguyễn Bá Vương";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Location = new System.Drawing.Point(612, 131);
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label49.Location = new System.Drawing.Point(658, 131);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(212, 26);
+            this.label49.Size = new System.Drawing.Size(167, 26);
             this.label49.TabIndex = 113;
-            this.label49.Text = "chuthuong1080@gmail.com";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label49.Text = "Nguyễn Bá Vương";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label48
             // 
             this.label48.AutoSize = true;
             this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Location = new System.Drawing.Point(612, 105);
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label48.Location = new System.Drawing.Point(658, 105);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(212, 26);
+            this.label48.Size = new System.Drawing.Size(167, 26);
             this.label48.TabIndex = 112;
-            this.label48.Text = "chuthuong1080@gmail.com";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label48.Text = "Nguyễn Bá Vương";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label43
             // 
             this.label43.AutoSize = true;
             this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.Location = new System.Drawing.Point(612, 79);
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label43.Location = new System.Drawing.Point(658, 79);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(212, 26);
+            this.label43.Size = new System.Drawing.Size(167, 26);
             this.label43.TabIndex = 111;
-            this.label43.Text = "chuthuong1080@gmail.com";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label43.Text = "Nguyễn Bá Vương";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox21
             // 
             this.pictureBox21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox21.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox21.Location = new System.Drawing.Point(873, 186);
+            this.pictureBox21.Location = new System.Drawing.Point(874, 186);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox21.Size = new System.Drawing.Size(41, 20);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox21.TabIndex = 108;
             this.pictureBox21.TabStop = false;
@@ -663,9 +596,9 @@ namespace UI_PTTKHT
             this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox18.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox18.Location = new System.Drawing.Point(873, 160);
+            this.pictureBox18.Location = new System.Drawing.Point(874, 160);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox18.Size = new System.Drawing.Size(41, 20);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox18.TabIndex = 105;
             this.pictureBox18.TabStop = false;
@@ -676,9 +609,9 @@ namespace UI_PTTKHT
             this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox15.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox15.Location = new System.Drawing.Point(873, 134);
+            this.pictureBox15.Location = new System.Drawing.Point(874, 134);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox15.Size = new System.Drawing.Size(41, 20);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 102;
             this.pictureBox15.TabStop = false;
@@ -689,35 +622,35 @@ namespace UI_PTTKHT
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox12.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox12.Location = new System.Drawing.Point(873, 108);
+            this.pictureBox12.Location = new System.Drawing.Point(874, 108);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox12.Size = new System.Drawing.Size(41, 20);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 99;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click_1);
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox11.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox11.Location = new System.Drawing.Point(830, 108);
+            this.pictureBox11.Location = new System.Drawing.Point(831, 108);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(37, 20);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 98;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click_1);
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox9.Location = new System.Drawing.Point(873, 82);
+            this.pictureBox9.Location = new System.Drawing.Point(874, 82);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox9.Size = new System.Drawing.Size(41, 20);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 96;
             this.pictureBox9.TabStop = false;
@@ -728,7 +661,7 @@ namespace UI_PTTKHT
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox8.Location = new System.Drawing.Point(830, 82);
+            this.pictureBox8.Location = new System.Drawing.Point(831, 82);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(37, 20);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -741,30 +674,19 @@ namespace UI_PTTKHT
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox6.Location = new System.Drawing.Point(873, 56);
+            this.pictureBox6.Location = new System.Drawing.Point(874, 56);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 20);
+            this.pictureBox6.Size = new System.Drawing.Size(41, 20);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 93;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
-            // 
-            // label33
-            // 
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(3, 495);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(21, 44);
-            this.label33.TabIndex = 89;
-            this.label33.Text = "Ngày sinh";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(830, 0);
+            this.label23.Location = new System.Drawing.Point(831, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(37, 53);
             this.label23.TabIndex = 88;
@@ -774,9 +696,9 @@ namespace UI_PTTKHT
             this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label65.Location = new System.Drawing.Point(523, 183);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(83, 26);
+            this.label65.Size = new System.Drawing.Size(129, 26);
             this.label65.TabIndex = 72;
-            this.label65.Text = "12A8";
+            this.label65.Text = "0333729170";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label64
@@ -796,7 +718,7 @@ namespace UI_PTTKHT
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(76, 26);
             this.label63.TabIndex = 70;
-            this.label63.Text = "0927834645";
+            this.label63.Text = "12A6";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label62
@@ -814,9 +736,9 @@ namespace UI_PTTKHT
             this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label59.Location = new System.Drawing.Point(523, 157);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(83, 26);
+            this.label59.Size = new System.Drawing.Size(129, 26);
             this.label59.TabIndex = 66;
-            this.label59.Text = "11A7";
+            this.label59.Text = "0333729170";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label58
@@ -836,7 +758,7 @@ namespace UI_PTTKHT
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(76, 26);
             this.label57.TabIndex = 64;
-            this.label57.Text = "0904254563";
+            this.label57.Text = "12A6";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label56
@@ -854,9 +776,9 @@ namespace UI_PTTKHT
             this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label53.Location = new System.Drawing.Point(523, 131);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(83, 26);
+            this.label53.Size = new System.Drawing.Size(129, 26);
             this.label53.TabIndex = 60;
-            this.label53.Text = "12A6";
+            this.label53.Text = "0333729170";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label52
@@ -876,7 +798,7 @@ namespace UI_PTTKHT
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(76, 26);
             this.label51.TabIndex = 58;
-            this.label51.Text = "0927834645";
+            this.label51.Text = "12A6";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label50
@@ -894,8 +816,9 @@ namespace UI_PTTKHT
             this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label47.Location = new System.Drawing.Point(523, 105);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(83, 26);
+            this.label47.Size = new System.Drawing.Size(129, 26);
             this.label47.TabIndex = 54;
+            this.label47.Text = "0333729170";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label46
@@ -915,7 +838,7 @@ namespace UI_PTTKHT
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(76, 26);
             this.label45.TabIndex = 52;
-            this.label45.Text = "0423954256";
+            this.label45.Text = "12A6";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label44
@@ -933,9 +856,9 @@ namespace UI_PTTKHT
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label41.Location = new System.Drawing.Point(523, 79);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(83, 26);
+            this.label41.Size = new System.Drawing.Size(129, 26);
             this.label41.TabIndex = 48;
-            this.label41.Text = "10A9";
+            this.label41.Text = "0333729170";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label40
@@ -955,7 +878,7 @@ namespace UI_PTTKHT
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(76, 26);
             this.label39.TabIndex = 46;
-            this.label39.Text = "0892342534";
+            this.label39.Text = "12A6";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label38
@@ -973,9 +896,9 @@ namespace UI_PTTKHT
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Location = new System.Drawing.Point(523, 53);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(83, 26);
+            this.label32.Size = new System.Drawing.Size(129, 26);
             this.label32.TabIndex = 42;
-            this.label32.Text = "10A6";
+            this.label32.Text = "0333729170";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
@@ -995,8 +918,8 @@ namespace UI_PTTKHT
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(76, 26);
             this.label27.TabIndex = 40;
-            this.label27.Text = "0283425543";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label27.Text = "12A6";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
@@ -1004,9 +927,9 @@ namespace UI_PTTKHT
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(523, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 53);
+            this.label18.Size = new System.Drawing.Size(129, 53);
             this.label18.TabIndex = 37;
-            this.label18.Text = "Lớp chủ nhiệm";
+            this.label18.Text = "Số điện thoại";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
@@ -1037,7 +960,7 @@ namespace UI_PTTKHT
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(76, 26);
             this.label35.TabIndex = 33;
-            this.label35.Text = "GV006";
+            this.label35.Text = "00006";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
@@ -1067,7 +990,7 @@ namespace UI_PTTKHT
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(76, 26);
             this.label30.TabIndex = 28;
-            this.label30.Text = "GV005";
+            this.label30.Text = "00005";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
@@ -1097,7 +1020,7 @@ namespace UI_PTTKHT
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(76, 26);
             this.label25.TabIndex = 23;
-            this.label25.Text = "GV004";
+            this.label25.Text = "00004";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -1127,7 +1050,7 @@ namespace UI_PTTKHT
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(76, 26);
             this.label20.TabIndex = 18;
-            this.label20.Text = "GV003";
+            this.label20.Text = "00003";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
@@ -1157,7 +1080,7 @@ namespace UI_PTTKHT
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(76, 26);
             this.label15.TabIndex = 13;
-            this.label15.Text = "GV002";
+            this.label15.Text = "00002";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
@@ -1177,7 +1100,7 @@ namespace UI_PTTKHT
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 26);
             this.label10.TabIndex = 9;
-            this.label10.Text = "GV001";
+            this.label10.Text = "00001";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -1198,7 +1121,7 @@ namespace UI_PTTKHT
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 53);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Số điện thoại";
+            this.label8.Text = "Lớp";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -1270,11 +1193,11 @@ namespace UI_PTTKHT
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(612, 0);
+            this.label22.Location = new System.Drawing.Point(658, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(212, 53);
+            this.label22.Size = new System.Drawing.Size(167, 53);
             this.label22.TabIndex = 87;
-            this.label22.Text = "Email";
+            this.label22.Text = "Phụ huynh";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox3
@@ -1282,7 +1205,7 @@ namespace UI_PTTKHT
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox3.Location = new System.Drawing.Point(830, 56);
+            this.pictureBox3.Location = new System.Drawing.Point(831, 56);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1294,82 +1217,114 @@ namespace UI_PTTKHT
             // 
             this.label37.AutoSize = true;
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Location = new System.Drawing.Point(612, 53);
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label37.Location = new System.Drawing.Point(658, 53);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(212, 26);
+            this.label37.Size = new System.Drawing.Size(167, 26);
             this.label37.TabIndex = 109;
-            this.label37.Text = "chuthuong1080@gmail.com";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label37.Text = "Nguyễn Bá Vương";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 51);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(159, 591);
-            this.panel2.TabIndex = 8;
+            this.panel4.Controls.Add(this.comboBox1);
+            this.panel4.Controls.Add(this.lsbAdmin);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.btnThemGiaoVien);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(918, 52);
+            this.panel4.TabIndex = 2;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
-            // panel1
+            // comboBox1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1077, 51);
-            this.panel1.TabIndex = 7;
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "12A1",
+            "12A2",
+            "12A3",
+            "12A4",
+            "12A5",
+            "12A6",
+            "12A7",
+            "12A8"});
+            this.comboBox1.Location = new System.Drawing.Point(275, 18);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(255, 24);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.Text = "12A6";
             // 
-            // pictureBox1
+            // pictureBox4
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(1037, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::UI_PTTKHT.Properties.Resources.search;
+            this.pictureBox4.Location = new System.Drawing.Point(830, 14);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox2
+            // textBox1
             // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.textBox1.Location = new System.Drawing.Point(580, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 22);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Nhập từ khóa ...";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
-            // FrmAdGiaoVien
+            // btnThemGiaoVien
+            // 
+            this.btnThemGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemGiaoVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemGiaoVien.Location = new System.Drawing.Point(876, 11);
+            this.btnThemGiaoVien.Name = "btnThemGiaoVien";
+            this.btnThemGiaoVien.Size = new System.Drawing.Size(30, 29);
+            this.btnThemGiaoVien.TabIndex = 4;
+            this.btnThemGiaoVien.Text = "+";
+            this.btnThemGiaoVien.UseVisualStyleBackColor = true;
+            this.btnThemGiaoVien.Click += new System.EventHandler(this.btnThemGiaoVien_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(6, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(220, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Danh sách học sinh";
+            // 
+            // FrmAdHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 642);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmAdGiaoVien";
+            this.Name = "FrmAdHocSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Danh Sách Giáo Viên";
-            this.Load += new System.EventHandler(this.FrmAdGiaoVien_Load);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.Text = "Học Sinh";
+            this.Load += new System.EventHandler(this.FrmAdHocSinh_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1384,23 +1339,20 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnThemGiaoVien;
-        private System.Windows.Forms.PictureBox pictureBox2;
+
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label lblTrangChu;
         private System.Windows.Forms.Label lblThongBaoChung;
@@ -1412,15 +1364,11 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label lblHocSinh;
         private System.Windows.Forms.Label lblToBoMon;
         private System.Windows.Forms.Label lblThongBao;
+        private System.Windows.Forms.ListBox lsbAdmin;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox lsbAdmin;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -1438,7 +1386,6 @@ namespace UI_PTTKHT
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label64;
@@ -1492,7 +1439,9 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnThemGiaoVien;
     }
 }

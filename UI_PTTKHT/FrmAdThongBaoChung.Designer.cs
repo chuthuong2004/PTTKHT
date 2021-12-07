@@ -68,7 +68,7 @@ namespace UI_PTTKHT
             // 
             this.label7.AutoSize = true;
             this.label7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label7.Location = new System.Drawing.Point(713, 19);
+            this.label7.Location = new System.Drawing.Point(986, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace UI_PTTKHT
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(645, 467);
+            this.panel3.Size = new System.Drawing.Size(918, 591);
             this.panel3.TabIndex = 8;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
@@ -98,7 +98,7 @@ namespace UI_PTTKHT
             "Sửa",
             "Đổi Mật Khẩu",
             "Thoát"});
-            this.lsbAdmin.Location = new System.Drawing.Point(525, -3);
+            this.lsbAdmin.Location = new System.Drawing.Point(786, 0);
             this.lsbAdmin.Name = "lsbAdmin";
             this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
             this.lsbAdmin.TabIndex = 10;
@@ -116,7 +116,7 @@ namespace UI_PTTKHT
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(21, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(598, 156);
+            this.groupBox1.Size = new System.Drawing.Size(878, 541);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -200,7 +200,7 @@ namespace UI_PTTKHT
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(159, 467);
+            this.panel2.Size = new System.Drawing.Size(159, 591);
             this.panel2.TabIndex = 7;
             // 
             // flowLayoutPanel1
@@ -218,7 +218,7 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 467);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 591);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
@@ -334,7 +334,7 @@ namespace UI_PTTKHT
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 51);
+            this.panel1.Size = new System.Drawing.Size(1077, 51);
             this.panel1.TabIndex = 6;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
@@ -352,7 +352,7 @@ namespace UI_PTTKHT
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(764, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(1037, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -364,7 +364,7 @@ namespace UI_PTTKHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 518);
+            this.ClientSize = new System.Drawing.Size(1077, 642);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

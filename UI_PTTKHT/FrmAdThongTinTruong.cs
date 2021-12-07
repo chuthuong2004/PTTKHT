@@ -23,7 +23,7 @@ namespace UI_PTTKHT
                 frm.ShowDialog();
             }));
             thread.Start();
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             this.Close();
         }
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -69,8 +69,8 @@ namespace UI_PTTKHT
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
-            //ShowForm(frm);
+            FrmAdLopHoc frm = new FrmAdLopHoc();
+            ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
@@ -86,8 +86,8 @@ namespace UI_PTTKHT
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            //FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            //ShowForm(frm);
+            FrmAdHocSinh frm = new FrmAdHocSinh();
+            ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)

@@ -20,12 +20,12 @@ namespace UI_PTTKHT
 
         private void ShowForm(Form frm)
         {
-            Thread thread = new Thread(new ThreadStart(()=>
+            Thread thread = new Thread(new ThreadStart(() =>
             {
                 frm.ShowDialog();
             }));
             thread.Start();
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             this.Close();
         }
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -68,8 +68,8 @@ namespace UI_PTTKHT
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdLopHoc frm = new FrmAdLopHoc();
+            ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
@@ -86,8 +86,8 @@ namespace UI_PTTKHT
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdHocSinh frm = new FrmAdHocSinh();
+            ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
@@ -126,14 +126,8 @@ namespace UI_PTTKHT
             }
             else if (lsbAdmin.SelectedIndex == 2)
             {
-                Thread thread = new Thread(new ThreadStart(() =>
-                {
-                    FrmDangNhap frm = new FrmDangNhap();
-                    frm.ShowDialog();
-                }));
-                thread.Start();
-                Thread.Sleep(10);
-                this.Close();
+                FrmDangNhap frm = new FrmDangNhap();
+                ShowForm(frm);
             }
         }
 

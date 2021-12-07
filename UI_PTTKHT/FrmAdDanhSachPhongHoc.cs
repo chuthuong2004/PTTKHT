@@ -23,7 +23,7 @@ namespace UI_PTTKHT
                 frm.ShowDialog();
             }));
             thread.Start();
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             this.Close();
         }
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -70,8 +70,8 @@ namespace UI_PTTKHT
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdLopHoc frm = new FrmAdLopHoc();
+            ShowForm(frm);
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
@@ -88,8 +88,8 @@ namespace UI_PTTKHT
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            FrmAdHocSinh frm = new FrmAdHocSinh();
+            ShowForm(frm);
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
@@ -166,6 +166,61 @@ namespace UI_PTTKHT
             lblHocSinh.Visible = false;
             lblToBoMon.Visible = false;
             lblThongBao.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng tìm kiếm đang bảo trì !");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm phòng học đang bảo trì !");
         }
     }
 }

@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdSuaThongTinTruongHoc : Form
+    public partial class FrmAdThemGiaoVien : Form
     {
-        public FrmAdSuaThongTinTruongHoc()
+        public FrmAdThemGiaoVien()
         {
             InitializeComponent();
         }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
+        }
+
         private void ShowForm(Form frm)
         {
             Thread thread = new Thread(new ThreadStart(() =>
@@ -26,21 +33,10 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
-            ShowForm(frm);
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng chỉnh sửa đang bảo trì !");
-            FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
+            MessageBox.Show("Thêm thông tin giáo viên thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
             ShowForm(frm);
         }
 
@@ -73,12 +69,17 @@ namespace UI_PTTKHT
             }
         }
 
-        private void panel2_Click(object sender, EventArgs e)
+        private void panel1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }
 
-        private void panel1_Click(object sender, EventArgs e)
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }

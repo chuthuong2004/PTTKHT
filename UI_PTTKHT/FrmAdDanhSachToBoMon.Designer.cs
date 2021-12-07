@@ -48,6 +48,7 @@ namespace UI_PTTKHT
             this.lblThongBao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -89,6 +90,8 @@ namespace UI_PTTKHT
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lsbAdmin = new System.Windows.Forms.ListBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -98,6 +101,7 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -112,13 +116,14 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Location = new System.Drawing.Point(715, 19);
+            this.label11.Location = new System.Drawing.Point(986, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(45, 16);
             this.label11.TabIndex = 4;
@@ -146,7 +151,7 @@ namespace UI_PTTKHT
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 51);
+            this.panel1.Size = new System.Drawing.Size(1077, 51);
             this.panel1.TabIndex = 3;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
@@ -154,7 +159,7 @@ namespace UI_PTTKHT
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(766, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(1037, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +185,7 @@ namespace UI_PTTKHT
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(159, 467);
+            this.panel2.Size = new System.Drawing.Size(159, 591);
             this.panel2.TabIndex = 5;
             // 
             // flowLayoutPanel1
@@ -198,7 +203,7 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 467);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 591);
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
@@ -312,40 +317,49 @@ namespace UI_PTTKHT
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(159, 51);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(645, 467);
+            this.panel3.Size = new System.Drawing.Size(918, 591);
             this.panel3.TabIndex = 6;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.tableLayoutPanel1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 52);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(645, 415);
+            this.panel5.Size = new System.Drawing.Size(918, 539);
             this.panel5.TabIndex = 3;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.button2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 496);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(918, 43);
+            this.panel6.TabIndex = 1;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(66, 314);
+            this.label13.Location = new System.Drawing.Point(60, 4);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(27, 29);
-            this.label13.TabIndex = 2;
+            this.label13.TabIndex = 5;
             this.label13.Text = "1";
             // 
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(99, 313);
+            this.button4.Location = new System.Drawing.Point(93, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(49, 34);
-            this.button4.TabIndex = 1;
+            this.button4.TabIndex = 3;
             this.button4.Text = ">";
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -353,10 +367,10 @@ namespace UI_PTTKHT
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(11, 313);
+            this.button2.Location = new System.Drawing.Point(5, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(49, 34);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 4;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -364,11 +378,11 @@ namespace UI_PTTKHT
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 4, 6);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 4, 4);
@@ -404,18 +418,31 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 3, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 6);
+            this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(639, 281);
+            this.tableLayoutPanel1.RowCount = 19;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263157F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(918, 539);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
@@ -424,10 +451,10 @@ namespace UI_PTTKHT
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox14.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox14.Location = new System.Drawing.Point(593, 243);
+            this.pictureBox14.Location = new System.Drawing.Point(872, 171);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(44, 35);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 48;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
@@ -437,10 +464,10 @@ namespace UI_PTTKHT
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox13.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox13.Location = new System.Drawing.Point(593, 203);
+            this.pictureBox13.Location = new System.Drawing.Point(872, 143);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 47;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
@@ -450,10 +477,10 @@ namespace UI_PTTKHT
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox12.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox12.Location = new System.Drawing.Point(593, 163);
+            this.pictureBox12.Location = new System.Drawing.Point(872, 115);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 46;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
@@ -463,10 +490,10 @@ namespace UI_PTTKHT
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox11.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox11.Location = new System.Drawing.Point(593, 123);
+            this.pictureBox11.Location = new System.Drawing.Point(872, 87);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 45;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
@@ -476,10 +503,10 @@ namespace UI_PTTKHT
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox10.Location = new System.Drawing.Point(593, 83);
+            this.pictureBox10.Location = new System.Drawing.Point(872, 59);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
@@ -489,10 +516,10 @@ namespace UI_PTTKHT
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox9.Location = new System.Drawing.Point(593, 43);
+            this.pictureBox9.Location = new System.Drawing.Point(872, 31);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.Size = new System.Drawing.Size(43, 22);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 43;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
@@ -502,10 +529,10 @@ namespace UI_PTTKHT
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox8.Location = new System.Drawing.Point(543, 243);
+            this.pictureBox8.Location = new System.Drawing.Point(827, 171);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(44, 35);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 42;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
@@ -515,10 +542,10 @@ namespace UI_PTTKHT
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox7.Location = new System.Drawing.Point(543, 203);
+            this.pictureBox7.Location = new System.Drawing.Point(827, 143);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 41;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
@@ -528,10 +555,10 @@ namespace UI_PTTKHT
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox6.Location = new System.Drawing.Point(543, 163);
+            this.pictureBox6.Location = new System.Drawing.Point(827, 115);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 40;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -541,10 +568,10 @@ namespace UI_PTTKHT
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox5.Location = new System.Drawing.Point(543, 123);
+            this.pictureBox5.Location = new System.Drawing.Point(827, 87);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 39;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
@@ -554,10 +581,10 @@ namespace UI_PTTKHT
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox4.Location = new System.Drawing.Point(543, 83);
+            this.pictureBox4.Location = new System.Drawing.Point(827, 59);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 38;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
@@ -565,9 +592,9 @@ namespace UI_PTTKHT
             // label36
             // 
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(193, 240);
+            this.label36.Location = new System.Drawing.Point(277, 168);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(344, 41);
+            this.label36.Size = new System.Drawing.Size(544, 28);
             this.label36.TabIndex = 34;
             this.label36.Text = "Tổ môn Sinh";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -575,19 +602,19 @@ namespace UI_PTTKHT
             // label35
             // 
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Location = new System.Drawing.Point(63, 240);
+            this.label35.Location = new System.Drawing.Point(94, 168);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(124, 41);
+            this.label35.Size = new System.Drawing.Size(177, 28);
             this.label35.TabIndex = 33;
-            this.label35.Text = "MT006";
+            this.label35.Text = "TB006";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
             // 
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(3, 240);
+            this.label34.Location = new System.Drawing.Point(3, 168);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(54, 41);
+            this.label34.Size = new System.Drawing.Size(85, 28);
             this.label34.TabIndex = 32;
             this.label34.Text = "6";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -595,9 +622,9 @@ namespace UI_PTTKHT
             // label31
             // 
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Location = new System.Drawing.Point(193, 200);
+            this.label31.Location = new System.Drawing.Point(277, 140);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(344, 40);
+            this.label31.Size = new System.Drawing.Size(544, 28);
             this.label31.TabIndex = 29;
             this.label31.Text = "Tổ môn Anh";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -605,19 +632,19 @@ namespace UI_PTTKHT
             // label30
             // 
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Location = new System.Drawing.Point(63, 200);
+            this.label30.Location = new System.Drawing.Point(94, 140);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(124, 40);
+            this.label30.Size = new System.Drawing.Size(177, 28);
             this.label30.TabIndex = 28;
-            this.label30.Text = "MT005";
+            this.label30.Text = "TB005";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
             // 
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(3, 200);
+            this.label29.Location = new System.Drawing.Point(3, 140);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(54, 40);
+            this.label29.Size = new System.Drawing.Size(85, 28);
             this.label29.TabIndex = 27;
             this.label29.Text = "5";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -625,9 +652,9 @@ namespace UI_PTTKHT
             // label26
             // 
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(193, 160);
+            this.label26.Location = new System.Drawing.Point(277, 112);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(344, 40);
+            this.label26.Size = new System.Drawing.Size(544, 28);
             this.label26.TabIndex = 24;
             this.label26.Text = "Tổ Môn Hóa";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -635,19 +662,19 @@ namespace UI_PTTKHT
             // label25
             // 
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(63, 160);
+            this.label25.Location = new System.Drawing.Point(94, 112);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(124, 40);
+            this.label25.Size = new System.Drawing.Size(177, 28);
             this.label25.TabIndex = 23;
-            this.label25.Text = "MT004";
+            this.label25.Text = "TB004";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
             // 
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Location = new System.Drawing.Point(3, 160);
+            this.label24.Location = new System.Drawing.Point(3, 112);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(54, 40);
+            this.label24.Size = new System.Drawing.Size(85, 28);
             this.label24.TabIndex = 22;
             this.label24.Text = "4";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -655,9 +682,9 @@ namespace UI_PTTKHT
             // label21
             // 
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(193, 120);
+            this.label21.Location = new System.Drawing.Point(277, 84);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(344, 40);
+            this.label21.Size = new System.Drawing.Size(544, 28);
             this.label21.TabIndex = 19;
             this.label21.Text = "Tổ môn Lý";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -665,19 +692,19 @@ namespace UI_PTTKHT
             // label20
             // 
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(63, 120);
+            this.label20.Location = new System.Drawing.Point(94, 84);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(124, 40);
+            this.label20.Size = new System.Drawing.Size(177, 28);
             this.label20.TabIndex = 18;
-            this.label20.Text = "MT003";
+            this.label20.Text = "TB003";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
             // 
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Location = new System.Drawing.Point(3, 120);
+            this.label19.Location = new System.Drawing.Point(3, 84);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 40);
+            this.label19.Size = new System.Drawing.Size(85, 28);
             this.label19.TabIndex = 17;
             this.label19.Text = "3";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -685,9 +712,9 @@ namespace UI_PTTKHT
             // label16
             // 
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(193, 80);
+            this.label16.Location = new System.Drawing.Point(277, 56);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(344, 40);
+            this.label16.Size = new System.Drawing.Size(544, 28);
             this.label16.TabIndex = 14;
             this.label16.Text = "Tổ môn Văn";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -695,19 +722,19 @@ namespace UI_PTTKHT
             // label15
             // 
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(63, 80);
+            this.label15.Location = new System.Drawing.Point(94, 56);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(124, 40);
+            this.label15.Size = new System.Drawing.Size(177, 28);
             this.label15.TabIndex = 13;
-            this.label15.Text = "MT002";
+            this.label15.Text = "TB002";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(193, 40);
+            this.label12.Location = new System.Drawing.Point(277, 28);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(344, 40);
+            this.label12.Size = new System.Drawing.Size(544, 28);
             this.label12.TabIndex = 10;
             this.label12.Text = "Tổ môn Toán";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -715,19 +742,19 @@ namespace UI_PTTKHT
             // label10
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(63, 40);
+            this.label10.Location = new System.Drawing.Point(94, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 40);
+            this.label10.Size = new System.Drawing.Size(177, 28);
             this.label10.TabIndex = 9;
-            this.label10.Text = "MT001";
+            this.label10.Text = "TB001";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(3, 40);
+            this.label9.Location = new System.Drawing.Point(3, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 40);
+            this.label9.Size = new System.Drawing.Size(85, 28);
             this.label9.TabIndex = 8;
             this.label9.Text = "1";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -735,27 +762,27 @@ namespace UI_PTTKHT
             // label8
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(593, 0);
+            this.label8.Location = new System.Drawing.Point(872, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 40);
+            this.label8.Size = new System.Drawing.Size(43, 28);
             this.label8.TabIndex = 7;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(543, 0);
+            this.label6.Location = new System.Drawing.Point(827, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 40);
+            this.label6.Size = new System.Drawing.Size(39, 28);
             this.label6.TabIndex = 6;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(63, 0);
+            this.label3.Location = new System.Drawing.Point(94, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 40);
+            this.label3.Size = new System.Drawing.Size(177, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mã";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -765,7 +792,7 @@ namespace UI_PTTKHT
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 40);
+            this.label2.Size = new System.Drawing.Size(85, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "#";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -773,9 +800,9 @@ namespace UI_PTTKHT
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(193, 0);
+            this.label4.Location = new System.Drawing.Point(277, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(344, 40);
+            this.label4.Size = new System.Drawing.Size(544, 28);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -783,9 +810,9 @@ namespace UI_PTTKHT
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 80);
+            this.label5.Location = new System.Drawing.Point(3, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 40);
+            this.label5.Size = new System.Drawing.Size(85, 28);
             this.label5.TabIndex = 5;
             this.label5.Text = "2";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -795,10 +822,10 @@ namespace UI_PTTKHT
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox3.Location = new System.Drawing.Point(543, 43);
+            this.pictureBox3.Location = new System.Drawing.Point(827, 31);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 34);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -806,30 +833,53 @@ namespace UI_PTTKHT
             // panel4
             // 
             this.panel4.Controls.Add(this.lsbAdmin);
+            this.panel4.Controls.Add(this.pictureBox15);
+            this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(645, 52);
+            this.panel4.Size = new System.Drawing.Size(918, 52);
             this.panel4.TabIndex = 2;
             this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // lsbAdmin
             // 
-            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lsbAdmin.FormattingEnabled = true;
             this.lsbAdmin.ItemHeight = 16;
             this.lsbAdmin.Items.AddRange(new object[] {
             "Sửa",
             "Đổi Mật Khẩu",
             "Thoát"});
-            this.lsbAdmin.Location = new System.Drawing.Point(522, 0);
+            this.lsbAdmin.Location = new System.Drawing.Point(786, 0);
             this.lsbAdmin.Name = "lsbAdmin";
-            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
-            this.lsbAdmin.TabIndex = 8;
+            this.lsbAdmin.Size = new System.Drawing.Size(120, 84);
+            this.lsbAdmin.TabIndex = 11;
             this.lsbAdmin.Visible = false;
-            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
+            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged_1);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox15.Image = global::UI_PTTKHT.Properties.Resources.search;
+            this.pictureBox15.Location = new System.Drawing.Point(827, 16);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 10;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(577, 18);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 22);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "Nhập từ khóa ...";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // label7
             // 
@@ -846,18 +896,19 @@ namespace UI_PTTKHT
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(595, 11);
+            this.button1.Location = new System.Drawing.Point(875, 13);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 36);
+            this.button1.Size = new System.Drawing.Size(31, 29);
             this.button1.TabIndex = 1;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAdDanhSachToBoMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 518);
+            this.ClientSize = new System.Drawing.Size(1077, 642);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -875,7 +926,8 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -891,6 +943,7 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -955,9 +1008,12 @@ namespace UI_PTTKHT
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox lsbAdmin;
     }
 }

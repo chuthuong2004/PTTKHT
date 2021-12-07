@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdGiaoVien : Form
+    public partial class FrmAdHocSinh : Form
     {
-        public FrmAdGiaoVien()
+        public FrmAdHocSinh()
         {
             InitializeComponent();
         }
@@ -82,12 +82,13 @@ namespace UI_PTTKHT
 
         private void lblGiaoVien_Click(object sender, EventArgs e)
         {
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
         }
 
         private void lblHocSinh_Click(object sender, EventArgs e)
         {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
+
         }
 
         private void lblToBoMon_Click(object sender, EventArgs e)
@@ -95,6 +96,7 @@ namespace UI_PTTKHT
             FrmAdDanhSachToBoMon frm = new FrmAdDanhSachToBoMon();
             ShowForm(frm);
         }
+
         private void lblThongBao_Click(object sender, EventArgs e)
         {
             FrmAdThongBao frm = new FrmAdThongBao();
@@ -116,7 +118,7 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = false;
         }
 
-        private void flowLayoutPanel1_Click(object sender, EventArgs e)
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }
@@ -126,12 +128,7 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = false;
         }
 
-        private void panel5_Click(object sender, EventArgs e)
-        {
-            lsbAdmin.Visible = false;
-        }
-
-        private void tableLayoutPanel1_Click(object sender, EventArgs e)
+        private void flowLayoutPanel1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }
@@ -155,7 +152,7 @@ namespace UI_PTTKHT
             }
         }
 
-        private void FrmAdGiaoVien_Load(object sender, EventArgs e)
+        private void FrmAdHocSinh_Load(object sender, EventArgs e)
         {
             lblLopHoc.Visible = false;
             lblPhongHoc.Visible = false;
@@ -165,98 +162,79 @@ namespace UI_PTTKHT
             lblThongBao.Visible = false;
         }
 
-        private void btnThemGiaoVien_Click(object sender, EventArgs e)
+        private void textBox1_Click(object sender, EventArgs e)
         {
-            FrmAdThemGiaoVien frm = new FrmAdThemGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox11_Click_1(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox5_Click_1(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox7_Click_1(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox10_Click_1(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            FrmAdSuaThongTinGiaoVien frm = new FrmAdSuaThongTinGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void pictureBox6_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void pictureBox12_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void pictureBox21_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xóa đang bảo trì !");
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
+            textBox1.Clear();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng tìm kiếm dang bảo trì !");
+            MessageBox.Show("Chức năng tìm kiếm đang bảo trì !");
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
+        private void btnThemGiaoVien_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng thêm học sinh đang bảo trì !");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa học sinh đang bảo trì !");
         }
     }
 }

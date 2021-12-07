@@ -1,7 +1,7 @@
 ﻿
 namespace UI_PTTKHT
 {
-    partial class FrmAdDanhSachPhongHoc
+    partial class FrmAdLopHoc
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,16 @@ namespace UI_PTTKHT
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblTrangChu = new System.Windows.Forms.Label();
-            this.lblThongBaoChung = new System.Windows.Forms.Label();
-            this.lblThongTinTruong = new System.Windows.Forms.Label();
-            this.lblQuanLyTruongHoc = new System.Windows.Forms.Label();
-            this.lblLopHoc = new System.Windows.Forms.Label();
-            this.lblPhongHoc = new System.Windows.Forms.Label();
-            this.lblGiaoVien = new System.Windows.Forms.Label();
-            this.lblHocSinh = new System.Windows.Forms.Label();
-            this.lblToBoMon = new System.Windows.Forms.Label();
-            this.lblThongBao = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnThemGiaoVien = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lsbAdmin = new System.Windows.Forms.ListBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -51,7 +46,7 @@ namespace UI_PTTKHT
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -64,7 +59,7 @@ namespace UI_PTTKHT
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -73,28 +68,33 @@ namespace UI_PTTKHT
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lsbAdmin = new System.Windows.Forms.ListBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblTrangChu = new System.Windows.Forms.Label();
+            this.lblThongBaoChung = new System.Windows.Forms.Label();
+            this.lblThongTinTruong = new System.Windows.Forms.Label();
+            this.lblQuanLyTruongHoc = new System.Windows.Forms.Label();
+            this.lblLopHoc = new System.Windows.Forms.Label();
+            this.lblPhongHoc = new System.Windows.Forms.Label();
+            this.lblGiaoVien = new System.Windows.Forms.Label();
+            this.lblHocSinh = new System.Windows.Forms.Label();
+            this.lblToBoMon = new System.Windows.Forms.Label();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -102,178 +102,129 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // pictureBox4
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 51);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(159, 591);
-            this.panel2.TabIndex = 1;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::UI_PTTKHT.Properties.Resources.search;
+            this.pictureBox4.Location = new System.Drawing.Point(830, 14);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // flowLayoutPanel1
+            // textBox1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel1.Controls.Add(this.lblTrangChu);
-            this.flowLayoutPanel1.Controls.Add(this.lblThongBaoChung);
-            this.flowLayoutPanel1.Controls.Add(this.lblThongTinTruong);
-            this.flowLayoutPanel1.Controls.Add(this.lblQuanLyTruongHoc);
-            this.flowLayoutPanel1.Controls.Add(this.lblLopHoc);
-            this.flowLayoutPanel1.Controls.Add(this.lblPhongHoc);
-            this.flowLayoutPanel1.Controls.Add(this.lblGiaoVien);
-            this.flowLayoutPanel1.Controls.Add(this.lblHocSinh);
-            this.flowLayoutPanel1.Controls.Add(this.lblToBoMon);
-            this.flowLayoutPanel1.Controls.Add(this.lblThongBao);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 591);
-            this.flowLayoutPanel1.TabIndex = 1;
-            this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
+            this.textBox1.Location = new System.Drawing.Point(580, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 22);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Nhập từ khóa ...";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
-            // lblTrangChu
+            // btnThemGiaoVien
             // 
-            this.lblTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangChu.Location = new System.Drawing.Point(3, 0);
-            this.lblTrangChu.Name = "lblTrangChu";
-            this.lblTrangChu.Size = new System.Drawing.Size(153, 26);
-            this.lblTrangChu.TabIndex = 0;
-            this.lblTrangChu.Text = "Trang chủ";
-            this.lblTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTrangChu.Click += new System.EventHandler(this.lblTrangChu_Click);
+            this.btnThemGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemGiaoVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemGiaoVien.Location = new System.Drawing.Point(876, 11);
+            this.btnThemGiaoVien.Name = "btnThemGiaoVien";
+            this.btnThemGiaoVien.Size = new System.Drawing.Size(30, 29);
+            this.btnThemGiaoVien.TabIndex = 4;
+            this.btnThemGiaoVien.Text = "+";
+            this.btnThemGiaoVien.UseVisualStyleBackColor = true;
+            this.btnThemGiaoVien.Click += new System.EventHandler(this.btnThemGiaoVien_Click);
             // 
-            // lblThongBaoChung
+            // label7
             // 
-            this.lblThongBaoChung.Location = new System.Drawing.Point(3, 26);
-            this.lblThongBaoChung.Name = "lblThongBaoChung";
-            this.lblThongBaoChung.Size = new System.Drawing.Size(153, 26);
-            this.lblThongBaoChung.TabIndex = 0;
-            this.lblThongBaoChung.Text = "Thông báo chung";
-            this.lblThongBaoChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblThongBaoChung.Click += new System.EventHandler(this.lblThongBaoChung_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(6, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(208, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Danh sách lớp học";
             // 
-            // lblThongTinTruong
+            // panel4
             // 
-            this.lblThongTinTruong.Location = new System.Drawing.Point(3, 52);
-            this.lblThongTinTruong.Name = "lblThongTinTruong";
-            this.lblThongTinTruong.Size = new System.Drawing.Size(153, 26);
-            this.lblThongTinTruong.TabIndex = 0;
-            this.lblThongTinTruong.Text = "Thông tin trường";
-            this.lblThongTinTruong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblThongTinTruong.Click += new System.EventHandler(this.lblThongTinTruong_Click);
+            this.panel4.Controls.Add(this.lsbAdmin);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.btnThemGiaoVien);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(918, 52);
+            this.panel4.TabIndex = 2;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
-            // lblQuanLyTruongHoc
+            // lsbAdmin
             // 
-            this.lblQuanLyTruongHoc.Location = new System.Drawing.Point(3, 78);
-            this.lblQuanLyTruongHoc.Name = "lblQuanLyTruongHoc";
-            this.lblQuanLyTruongHoc.Size = new System.Drawing.Size(153, 26);
-            this.lblQuanLyTruongHoc.TabIndex = 0;
-            this.lblQuanLyTruongHoc.Text = "Quản lý trường học";
-            this.lblQuanLyTruongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblQuanLyTruongHoc.Click += new System.EventHandler(this.lblQuanLyTruongHoc_Click);
+            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lsbAdmin.FormattingEnabled = true;
+            this.lsbAdmin.ItemHeight = 16;
+            this.lsbAdmin.Items.AddRange(new object[] {
+            "Sửa",
+            "Đổi Mật Khẩu",
+            "Thoát"});
+            this.lsbAdmin.Location = new System.Drawing.Point(786, 0);
+            this.lsbAdmin.Name = "lsbAdmin";
+            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
+            this.lsbAdmin.TabIndex = 7;
+            this.lsbAdmin.Visible = false;
+            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
             // 
-            // lblLopHoc
+            // pictureBox2
             // 
-            this.lblLopHoc.Location = new System.Drawing.Point(3, 104);
-            this.lblLopHoc.Name = "lblLopHoc";
-            this.lblLopHoc.Size = new System.Drawing.Size(153, 26);
-            this.lblLopHoc.TabIndex = 0;
-            this.lblLopHoc.Text = "Lớp học";
-            this.lblLopHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblLopHoc.Click += new System.EventHandler(this.lblLopHoc_Click);
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
-            // lblPhongHoc
+            // pictureBox1
             // 
-            this.lblPhongHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongHoc.Location = new System.Drawing.Point(3, 130);
-            this.lblPhongHoc.Name = "lblPhongHoc";
-            this.lblPhongHoc.Size = new System.Drawing.Size(153, 26);
-            this.lblPhongHoc.TabIndex = 0;
-            this.lblPhongHoc.Text = "Phòng học";
-            this.lblPhongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPhongHoc.Click += new System.EventHandler(this.lblPhongHoc_Click);
-            // 
-            // lblGiaoVien
-            // 
-            this.lblGiaoVien.Location = new System.Drawing.Point(3, 156);
-            this.lblGiaoVien.Name = "lblGiaoVien";
-            this.lblGiaoVien.Size = new System.Drawing.Size(153, 26);
-            this.lblGiaoVien.TabIndex = 0;
-            this.lblGiaoVien.Text = "Giáo viên";
-            this.lblGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblGiaoVien.Click += new System.EventHandler(this.lblGiaoVien_Click);
-            // 
-            // lblHocSinh
-            // 
-            this.lblHocSinh.Location = new System.Drawing.Point(3, 182);
-            this.lblHocSinh.Name = "lblHocSinh";
-            this.lblHocSinh.Size = new System.Drawing.Size(153, 26);
-            this.lblHocSinh.TabIndex = 0;
-            this.lblHocSinh.Text = "Học sinh";
-            this.lblHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblHocSinh.Click += new System.EventHandler(this.lblHocSinh_Click);
-            // 
-            // lblToBoMon
-            // 
-            this.lblToBoMon.Location = new System.Drawing.Point(3, 208);
-            this.lblToBoMon.Name = "lblToBoMon";
-            this.lblToBoMon.Size = new System.Drawing.Size(153, 26);
-            this.lblToBoMon.TabIndex = 0;
-            this.lblToBoMon.Text = "Tổ bộ môn";
-            this.lblToBoMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblToBoMon.Click += new System.EventHandler(this.lblToBoMon_Click);
-            // 
-            // lblThongBao
-            // 
-            this.lblThongBao.Location = new System.Drawing.Point(3, 234);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(153, 26);
-            this.lblThongBao.TabIndex = 0;
-            this.lblThongBao.Text = "Thông báo";
-            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblThongBao.Click += new System.EventHandler(this.lblThongBao_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(159, 51);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(918, 591);
-            this.panel3.TabIndex = 2;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
+            this.pictureBox1.Location = new System.Drawing.Point(1037, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 52);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(918, 539);
             this.panel5.TabIndex = 3;
             // 
-            // panel7
+            // panel6
             // 
-            this.panel7.Controls.Add(this.tableLayoutPanel1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(918, 493);
-            this.panel7.TabIndex = 1;
+            this.panel6.Controls.Add(this.tableLayoutPanel1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(918, 497);
+            this.panel6.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -291,7 +242,7 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 5, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.label31, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label30, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.label29, 1, 4);
@@ -304,7 +255,7 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.Controls.Add(this.label18, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label17, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label16, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label12, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label10, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 1);
@@ -313,8 +264,8 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -339,8 +290,9 @@ namespace UI_PTTKHT
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(918, 493);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(918, 497);
+            this.tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // pictureBox10
             // 
@@ -414,17 +366,17 @@ namespace UI_PTTKHT
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox4
+            // pictureBox3
             // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::UI_PTTKHT.Properties.Resources.delete;
-            this.pictureBox4.Location = new System.Drawing.Point(872, 27);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 18);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 29;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.delete;
+            this.pictureBox3.Location = new System.Drawing.Point(872, 27);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label31
             // 
@@ -434,7 +386,7 @@ namespace UI_PTTKHT
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(407, 24);
             this.label31.TabIndex = 27;
-            this.label31.Text = "Phòng học thực hành";
+            this.label31.Text = "Nguyễn Thị Anh Thy";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
@@ -445,7 +397,7 @@ namespace UI_PTTKHT
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(223, 24);
             this.label30.TabIndex = 26;
-            this.label30.Text = "Dãy C - Lầu 2";
+            this.label30.Text = "Lớp 12A6";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
@@ -456,7 +408,7 @@ namespace UI_PTTKHT
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(131, 24);
             this.label29.TabIndex = 25;
-            this.label29.Text = "C202";
+            this.label29.Text = "12A6";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
@@ -478,7 +430,7 @@ namespace UI_PTTKHT
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(407, 24);
             this.label25.TabIndex = 21;
-            this.label25.Text = "Phòng học lý thuyết";
+            this.label25.Text = "Phan Minh Hiển";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -489,7 +441,7 @@ namespace UI_PTTKHT
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(223, 24);
             this.label24.TabIndex = 20;
-            this.label24.Text = "Dãy B - Lầu 1";
+            this.label24.Text = "Lớp 12A3";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
@@ -500,7 +452,7 @@ namespace UI_PTTKHT
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(131, 24);
             this.label23.TabIndex = 19;
-            this.label23.Text = "B101";
+            this.label23.Text = "12A3";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
@@ -522,7 +474,7 @@ namespace UI_PTTKHT
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(407, 24);
             this.label19.TabIndex = 15;
-            this.label19.Text = "Phòng học lý thuyết";
+            this.label19.Text = "Nguyễn Duy Quốc";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
@@ -533,7 +485,7 @@ namespace UI_PTTKHT
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(223, 24);
             this.label18.TabIndex = 14;
-            this.label18.Text = "Dãy A - Lầu 2";
+            this.label18.Text = "Lớp 11A8";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
@@ -544,7 +496,7 @@ namespace UI_PTTKHT
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(131, 24);
             this.label17.TabIndex = 13;
-            this.label17.Text = "A201";
+            this.label17.Text = "11A8";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -558,16 +510,16 @@ namespace UI_PTTKHT
             this.label16.Text = "2";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // label2
             // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(414, 24);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(407, 24);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Phòng học lý thuyết";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(414, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(407, 24);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Lê Thị Tuyết";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -577,7 +529,7 @@ namespace UI_PTTKHT
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(223, 24);
             this.label12.TabIndex = 8;
-            this.label12.Text = "Dãy A - Lầu 1";
+            this.label12.Text = "Lớp 10A1";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -588,7 +540,7 @@ namespace UI_PTTKHT
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 24);
             this.label10.TabIndex = 7;
-            this.label10.Text = "A101";
+            this.label10.Text = "10A1";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -630,7 +582,7 @@ namespace UI_PTTKHT
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(407, 24);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Chức năng";
+            this.label5.Text = "Giáo viên chủ nhiệm";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -641,7 +593,7 @@ namespace UI_PTTKHT
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(223, 24);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Vị trí";
+            this.label4.Text = "Tên lớp học";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -652,58 +604,58 @@ namespace UI_PTTKHT
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 24);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Tên";
+            this.label3.Text = "Mã lớp học";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "#";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::UI_PTTKHT.Properties.Resources.edit2;
-            this.pictureBox3.Location = new System.Drawing.Point(827, 27);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 18);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 493);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(918, 46);
-            this.panel6.TabIndex = 0;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(61, 7);
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(27, 29);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "1";
+            this.label14.Size = new System.Drawing.Size(39, 24);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "#";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::UI_PTTKHT.Properties.Resources.edit2;
+            this.pictureBox11.Location = new System.Drawing.Point(827, 27);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(39, 18);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 28;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 497);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(918, 42);
+            this.panel2.TabIndex = 0;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(58, 4);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(27, 29);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "1";
             // 
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(94, 6);
+            this.button4.Location = new System.Drawing.Point(91, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(49, 34);
             this.button4.TabIndex = 6;
@@ -714,87 +666,169 @@ namespace UI_PTTKHT
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(6, 6);
+            this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(49, 34);
             this.button2.TabIndex = 7;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.Controls.Add(this.lsbAdmin);
-            this.panel4.Controls.Add(this.pictureBox15);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(918, 52);
-            this.panel4.TabIndex = 2;
-            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(159, 51);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(918, 591);
+            this.panel3.TabIndex = 6;
             // 
-            // lsbAdmin
+            // lblTrangChu
             // 
-            this.lsbAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lsbAdmin.FormattingEnabled = true;
-            this.lsbAdmin.ItemHeight = 16;
-            this.lsbAdmin.Items.AddRange(new object[] {
-            "Sửa",
-            "Đổi Mật Khẩu",
-            "Thoát"});
-            this.lsbAdmin.Location = new System.Drawing.Point(786, -1);
-            this.lsbAdmin.Name = "lsbAdmin";
-            this.lsbAdmin.Size = new System.Drawing.Size(120, 68);
-            this.lsbAdmin.TabIndex = 7;
-            this.lsbAdmin.Visible = false;
-            this.lsbAdmin.SelectedIndexChanged += new System.EventHandler(this.lsbAdmin_SelectedIndexChanged);
+            this.lblTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChu.Location = new System.Drawing.Point(3, 0);
+            this.lblTrangChu.Name = "lblTrangChu";
+            this.lblTrangChu.Size = new System.Drawing.Size(153, 26);
+            this.lblTrangChu.TabIndex = 0;
+            this.lblTrangChu.Text = "Trang chủ";
+            this.lblTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTrangChu.Click += new System.EventHandler(this.lblTrangChu_Click);
             // 
-            // pictureBox15
+            // lblThongBaoChung
             // 
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox15.Image = global::UI_PTTKHT.Properties.Resources.search;
-            this.pictureBox15.Location = new System.Drawing.Point(826, 18);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 13;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
+            this.lblThongBaoChung.Location = new System.Drawing.Point(3, 26);
+            this.lblThongBaoChung.Name = "lblThongBaoChung";
+            this.lblThongBaoChung.Size = new System.Drawing.Size(153, 26);
+            this.lblThongBaoChung.TabIndex = 0;
+            this.lblThongBaoChung.Text = "Thông báo chung";
+            this.lblThongBaoChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblThongBaoChung.Click += new System.EventHandler(this.lblThongBaoChung_Click);
             // 
-            // textBox1
+            // lblThongTinTruong
             // 
-            this.textBox1.Location = new System.Drawing.Point(576, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 22);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "Nhập từ khóa ...";
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.lblThongTinTruong.Location = new System.Drawing.Point(3, 52);
+            this.lblThongTinTruong.Name = "lblThongTinTruong";
+            this.lblThongTinTruong.Size = new System.Drawing.Size(153, 26);
+            this.lblThongTinTruong.TabIndex = 0;
+            this.lblThongTinTruong.Text = "Thông tin trường";
+            this.lblThongTinTruong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblThongTinTruong.Click += new System.EventHandler(this.lblThongTinTruong_Click);
             // 
-            // label7
+            // lblQuanLyTruongHoc
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(6, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Danh sách phòng học";
+            this.lblQuanLyTruongHoc.Location = new System.Drawing.Point(3, 78);
+            this.lblQuanLyTruongHoc.Name = "lblQuanLyTruongHoc";
+            this.lblQuanLyTruongHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblQuanLyTruongHoc.TabIndex = 0;
+            this.lblQuanLyTruongHoc.Text = "Quản lý trường học";
+            this.lblQuanLyTruongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQuanLyTruongHoc.Click += new System.EventHandler(this.lblQuanLyTruongHoc_Click);
             // 
-            // button1
+            // lblLopHoc
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(866, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 28);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lblLopHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLopHoc.Location = new System.Drawing.Point(3, 104);
+            this.lblLopHoc.Name = "lblLopHoc";
+            this.lblLopHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblLopHoc.TabIndex = 0;
+            this.lblLopHoc.Text = "Lớp học";
+            this.lblLopHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLopHoc.Click += new System.EventHandler(this.lblLopHoc_Click);
+            // 
+            // lblPhongHoc
+            // 
+            this.lblPhongHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhongHoc.Location = new System.Drawing.Point(3, 130);
+            this.lblPhongHoc.Name = "lblPhongHoc";
+            this.lblPhongHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblPhongHoc.TabIndex = 0;
+            this.lblPhongHoc.Text = "Phòng học";
+            this.lblPhongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPhongHoc.Click += new System.EventHandler(this.lblPhongHoc_Click);
+            // 
+            // lblGiaoVien
+            // 
+            this.lblGiaoVien.Location = new System.Drawing.Point(3, 156);
+            this.lblGiaoVien.Name = "lblGiaoVien";
+            this.lblGiaoVien.Size = new System.Drawing.Size(153, 26);
+            this.lblGiaoVien.TabIndex = 0;
+            this.lblGiaoVien.Text = "Giáo viên";
+            this.lblGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGiaoVien.Click += new System.EventHandler(this.lblGiaoVien_Click);
+            // 
+            // lblHocSinh
+            // 
+            this.lblHocSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHocSinh.Location = new System.Drawing.Point(3, 182);
+            this.lblHocSinh.Name = "lblHocSinh";
+            this.lblHocSinh.Size = new System.Drawing.Size(153, 26);
+            this.lblHocSinh.TabIndex = 0;
+            this.lblHocSinh.Text = "Học sinh";
+            this.lblHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblHocSinh.Click += new System.EventHandler(this.lblHocSinh_Click);
+            // 
+            // lblToBoMon
+            // 
+            this.lblToBoMon.Location = new System.Drawing.Point(3, 208);
+            this.lblToBoMon.Name = "lblToBoMon";
+            this.lblToBoMon.Size = new System.Drawing.Size(153, 26);
+            this.lblToBoMon.TabIndex = 0;
+            this.lblToBoMon.Text = "Tổ bộ môn";
+            this.lblToBoMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblToBoMon.Click += new System.EventHandler(this.lblToBoMon_Click);
+            // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Location = new System.Drawing.Point(3, 234);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(153, 26);
+            this.lblThongBao.TabIndex = 0;
+            this.lblThongBao.Text = "Thông báo";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblThongBao.Click += new System.EventHandler(this.lblThongBao_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Location = new System.Drawing.Point(986, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 16);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "admin";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(69, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(325, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Trường THCS - THPT Bình Đa";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanel1.Controls.Add(this.lblTrangChu);
+            this.flowLayoutPanel1.Controls.Add(this.lblThongBaoChung);
+            this.flowLayoutPanel1.Controls.Add(this.lblThongTinTruong);
+            this.flowLayoutPanel1.Controls.Add(this.lblQuanLyTruongHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblLopHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblPhongHoc);
+            this.flowLayoutPanel1.Controls.Add(this.lblGiaoVien);
+            this.flowLayoutPanel1.Controls.Add(this.lblHocSinh);
+            this.flowLayoutPanel1.Controls.Add(this.lblToBoMon);
+            this.flowLayoutPanel1.Controls.Add(this.lblThongBao);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(159, 591);
+            this.flowLayoutPanel1.TabIndex = 5;
+            this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
             // panel1
             // 
@@ -807,72 +841,30 @@ namespace UI_PTTKHT
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1077, 51);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 4;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Location = new System.Drawing.Point(986, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 16);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "admin";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::UI_PTTKHT.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(1037, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Trường THCS - THPT Bình Đa";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // FrmAdDanhSachPhongHoc
+            // FrmAdLopHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 642);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmAdDanhSachPhongHoc";
+            this.Name = "FrmAdLopHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Danh Sách Phòng Học";
-            this.Load += new System.EventHandler(this.FrmAdDanhSachPhongHoc_Load);
-            this.panel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.Text = "Lớp Học";
+            this.Load += new System.EventHandler(this.FrmAdLopHoc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -880,34 +872,31 @@ namespace UI_PTTKHT
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnThemGiaoVien;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ListBox lsbAdmin;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblTrangChu;
         private System.Windows.Forms.Label lblThongBaoChung;
         private System.Windows.Forms.Label lblThongTinTruong;
@@ -918,8 +907,14 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label lblHocSinh;
         private System.Windows.Forms.Label lblToBoMon;
         private System.Windows.Forms.Label lblThongBao;
-        private System.Windows.Forms.ListBox lsbAdmin;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -927,7 +922,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
@@ -940,7 +935,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -949,13 +944,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

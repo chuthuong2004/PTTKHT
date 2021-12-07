@@ -21,7 +21,7 @@ namespace UI_PTTKHT
                     frm.ShowDialog();
                 }));
                 thread.Start();
-                Thread.Sleep(100);
+                Thread.Sleep(10);
                 this.Close();
             }
             else if (txtTenDangNhap.Text == "teacher" && txtPassword.Text == "teacher")
@@ -32,7 +32,7 @@ namespace UI_PTTKHT
                     frm.ShowDialog();
                 }));
                 thread.Start();
-                Thread.Sleep(100);
+                Thread.Sleep(10);
                 this.Close();
             }
             else if (txtTenDangNhap.Text == "student" && txtPassword.Text == "student")
@@ -43,7 +43,7 @@ namespace UI_PTTKHT
                     frm.ShowDialog();
                 }));
                 thread.Start();
-                Thread.Sleep(100);
+                Thread.Sleep(10);
                 this.Close();
             }
             else

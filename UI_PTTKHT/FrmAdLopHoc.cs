@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdTrangChu : Form
+    public partial class FrmAdLopHoc : Form
     {
-        public FrmAdTrangChu()
+        public FrmAdLopHoc()
         {
             InitializeComponent();
         }
+
         private void ShowForm(Form frm)
         {
             Thread thread = new Thread(new ThreadStart(() =>
@@ -26,8 +27,11 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
+
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
+            FrmAdTrangChu frm = new FrmAdTrangChu();
+            ShowForm(frm);
         }
 
         private void lblThongBaoChung_Click(object sender, EventArgs e)
@@ -35,7 +39,6 @@ namespace UI_PTTKHT
             FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
             ShowForm(frm);
         }
-
 
         private void lblThongTinTruong_Click(object sender, EventArgs e)
         {
@@ -65,18 +68,28 @@ namespace UI_PTTKHT
                 lblToBoMon.Visible = true;
                 lblThongBao.Visible = true;
             }
-
         }
 
         private void lblLopHoc_Click(object sender, EventArgs e)
         {
-            FrmAdLopHoc frm = new FrmAdLopHoc();
-            ShowForm(frm);
+
         }
 
         private void lblPhongHoc_Click(object sender, EventArgs e)
         {
             FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
+            ShowForm(frm);
+        }
+
+        private void lblGiaoVien_Click(object sender, EventArgs e)
+        {
+            FrmAdGiaoVien frm = new FrmAdGiaoVien();
+            ShowForm(frm);
+        }
+
+        private void lblHocSinh_Click(object sender, EventArgs e)
+        {
+            FrmAdHocSinh frm = new FrmAdHocSinh();
             ShowForm(frm);
         }
 
@@ -92,16 +105,9 @@ namespace UI_PTTKHT
             ShowForm(frm);
         }
 
-        private void lblGiaoVien_Click(object sender, EventArgs e)
+        private void label11_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void lblHocSinh_Click(object sender, EventArgs e)
-        {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
+            lsbAdmin.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -128,12 +134,17 @@ namespace UI_PTTKHT
             }
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void panel1_Click(object sender, EventArgs e)
         {
-            lsbAdmin.Visible = true;
+            lsbAdmin.Visible = false;
         }
 
-        private void panel3_Click(object sender, EventArgs e)
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }
@@ -143,48 +154,47 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = false;
         }
 
-        private void panel1_Click(object sender, EventArgs e)
+        private void pictureBox11_Click(object sender, EventArgs e)
         {
-            lsbAdmin.Visible = false;
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
-            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
         }
 
-        private void textBox3_Click(object sender, EventArgs e)
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
-            FrmAdDanhSachPhongHoc frm = new FrmAdDanhSachPhongHoc();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng sửa đang bảo trì !");
         }
 
-        private void textBox2_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBox8_Click(object sender, EventArgs e)
         {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
         }
 
-        private void FrmAdTrangChu_Load(object sender, EventArgs e)
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng xóa đang bảo trì !");
+        }
+
+        private void FrmAdLopHoc_Load(object sender, EventArgs e)
         {
             lblLopHoc.Visible = false;
             lblPhongHoc.Visible = false;
@@ -194,58 +204,18 @@ namespace UI_PTTKHT
             lblThongBao.Visible = false;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng tìm kiếm đang bảo trì !");
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnThemGiaoVien_Click(object sender, EventArgs e)
         {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng thêm lớp học đăng bảo trì !");
         }
-
         private void textBox1_Click(object sender, EventArgs e)
         {
-            FrmAdHocSinh frm = new FrmAdHocSinh();
-            ShowForm(frm);
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            FrmAdLopHoc frm = new FrmAdLopHoc();
-            ShowForm(frm);
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-            FrmAdLopHoc frm = new FrmAdLopHoc();
-            ShowForm(frm);
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-            FrmAdLopHoc frm = new FrmAdLopHoc();
-            ShowForm(frm);
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-            FrmAdGiaoVien frm = new FrmAdGiaoVien();
-            ShowForm(frm);
+            textBox1.Clear();
         }
     }
 }

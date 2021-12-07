@@ -189,8 +189,10 @@ namespace UI_PTTKHT
             this.MaHS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Ten = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.NgaySinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel11 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -254,8 +256,6 @@ namespace UI_PTTKHT
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage5.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -575,6 +575,12 @@ namespace UI_PTTKHT
             this.gt.Text = "Giới tính";
             this.gt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Lớp";
+            this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader12.Width = 70;
+            // 
             // Phone
             // 
             this.Phone.Text = "Số điện thoại";
@@ -586,6 +592,12 @@ namespace UI_PTTKHT
             this.NgaySinh.Text = "Ngày Sinh";
             this.NgaySinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NgaySinh.Width = 100;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Địa chỉ";
+            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader11.Width = 160;
             // 
             // panel11
             // 
@@ -1300,27 +1312,16 @@ namespace UI_PTTKHT
             this.tabControl1.Size = new System.Drawing.Size(762, 486);
             this.tabControl1.TabIndex = 0;
             // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Địa chỉ";
-            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader11.Width = 160;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Lớp";
-            this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader12.Width = 70;
-            // 
-            // FrmGiaoVien
+            // FrmGVTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 486);
             this.Controls.Add(this.tabControl1);
-            this.Name = "FrmGiaoVien";
+            this.Name = "FrmGVTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Giáo Viên";
+            this.Load += new System.EventHandler(this.FrmGVTrangChu_Load);
             this.tabPage5.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel12.ResumeLayout(false);

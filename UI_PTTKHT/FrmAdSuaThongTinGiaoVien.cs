@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_PTTKHT
 {
-    public partial class FrmAdSuaThongTinTruongHoc : Form
+    public partial class FrmAdSuaThongTinGiaoVien : Form
     {
-        public FrmAdSuaThongTinTruongHoc()
+        public FrmAdSuaThongTinGiaoVien()
         {
             InitializeComponent();
         }
@@ -26,22 +26,17 @@ namespace UI_PTTKHT
             Thread.Sleep(10);
             this.Close();
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnQuayLai_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
-            ShowForm(frm);
+            FrmAdGiaoVien frmAdGiaoVien = new FrmAdGiaoVien();
+            ShowForm(frmAdGiaoVien);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng chỉnh sửa đang bảo trì !");
-            FrmAdThongTinTruong frm = new FrmAdThongTinTruong();
-            ShowForm(frm);
+            MessageBox.Show("Chức năng cập nhật đang bảo trì !");
+            FrmAdGiaoVien frmAdGiaoVien = new FrmAdGiaoVien();
+            ShowForm(frmAdGiaoVien);
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -52,6 +47,7 @@ namespace UI_PTTKHT
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = true;
+
         }
 
         private void lsbAdmin_SelectedIndexChanged(object sender, EventArgs e)
@@ -73,14 +69,24 @@ namespace UI_PTTKHT
             }
         }
 
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            lsbAdmin.Visible = false;
+        }
+
         private void panel2_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
         }
 
-        private void panel1_Click(object sender, EventArgs e)
+        private void panel5_Click(object sender, EventArgs e)
         {
             lsbAdmin.Visible = false;
+        }
+
+        private void FrmAdSuaThongTinGiaoVien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
