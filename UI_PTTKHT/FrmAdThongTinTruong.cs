@@ -45,8 +45,26 @@ namespace UI_PTTKHT
 
         private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdThongBaoChung frm = new FrmAdThongBaoChung();
-            //ShowForm(frm);
+            Thread.Sleep(10);
+            if (lblLopHoc.Visible && lblPhongHoc.Visible && lblGiaoVien.Visible && lblHocSinh.Visible && lblToBoMon.Visible
+                && lblThongBao.Visible)
+            {
+                lblLopHoc.Visible = false;
+                lblPhongHoc.Visible = false;
+                lblGiaoVien.Visible = false;
+                lblHocSinh.Visible = false;
+                lblToBoMon.Visible = false;
+                lblThongBao.Visible = false;
+            }
+            else
+            {
+                lblLopHoc.Visible = true;
+                lblPhongHoc.Visible = true;
+                lblGiaoVien.Visible = true;
+                lblHocSinh.Visible = true;
+                lblToBoMon.Visible = true;
+                lblThongBao.Visible = true;
+            }
         }
 
         private void lblLopHoc_Click(object sender, EventArgs e)
@@ -140,5 +158,14 @@ namespace UI_PTTKHT
             lsbAdmin.Visible = true;
         }
 
+        private void FrmAdThongTinTruong_Load(object sender, EventArgs e)
+        {
+            lblLopHoc.Visible = false;
+            lblPhongHoc.Visible = false;
+            lblGiaoVien.Visible = false;
+            lblHocSinh.Visible = false;
+            lblToBoMon.Visible = false;
+            lblThongBao.Visible = false;
+        }
     }
 }

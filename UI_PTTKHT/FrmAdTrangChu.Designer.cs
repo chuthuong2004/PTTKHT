@@ -32,7 +32,6 @@ namespace UI_PTTKHT
             this.lblTrangChu = new System.Windows.Forms.Label();
             this.lblThongBaoChung = new System.Windows.Forms.Label();
             this.lblThongTinTruong = new System.Windows.Forms.Label();
-            this.lblQuanLyTruongHoc = new System.Windows.Forms.Label();
             this.lblLopHoc = new System.Windows.Forms.Label();
             this.lblPhongHoc = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -53,12 +52,14 @@ namespace UI_PTTKHT
             this.lblHocSinh = new System.Windows.Forms.Label();
             this.lblToBoMon = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblQuanLyTruongHoc = new System.Windows.Forms.Label();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -71,7 +72,7 @@ namespace UI_PTTKHT
             // lblTrangChu
             // 
             this.lblTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangChu.Location = new System.Drawing.Point(3, 0);
+            this.lblTrangChu.Location = new System.Drawing.Point(3, 16);
             this.lblTrangChu.Name = "lblTrangChu";
             this.lblTrangChu.Size = new System.Drawing.Size(153, 26);
             this.lblTrangChu.TabIndex = 0;
@@ -81,7 +82,7 @@ namespace UI_PTTKHT
             // 
             // lblThongBaoChung
             // 
-            this.lblThongBaoChung.Location = new System.Drawing.Point(3, 26);
+            this.lblThongBaoChung.Location = new System.Drawing.Point(3, 42);
             this.lblThongBaoChung.Name = "lblThongBaoChung";
             this.lblThongBaoChung.Size = new System.Drawing.Size(153, 26);
             this.lblThongBaoChung.TabIndex = 0;
@@ -91,7 +92,7 @@ namespace UI_PTTKHT
             // 
             // lblThongTinTruong
             // 
-            this.lblThongTinTruong.Location = new System.Drawing.Point(3, 52);
+            this.lblThongTinTruong.Location = new System.Drawing.Point(3, 68);
             this.lblThongTinTruong.Name = "lblThongTinTruong";
             this.lblThongTinTruong.Size = new System.Drawing.Size(153, 26);
             this.lblThongTinTruong.TabIndex = 0;
@@ -99,19 +100,9 @@ namespace UI_PTTKHT
             this.lblThongTinTruong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblThongTinTruong.Click += new System.EventHandler(this.lblThongTinTruong_Click);
             // 
-            // lblQuanLyTruongHoc
-            // 
-            this.lblQuanLyTruongHoc.Location = new System.Drawing.Point(3, 78);
-            this.lblQuanLyTruongHoc.Name = "lblQuanLyTruongHoc";
-            this.lblQuanLyTruongHoc.Size = new System.Drawing.Size(153, 26);
-            this.lblQuanLyTruongHoc.TabIndex = 0;
-            this.lblQuanLyTruongHoc.Text = "Quản lý trường học";
-            this.lblQuanLyTruongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblQuanLyTruongHoc.Click += new System.EventHandler(this.lblQuanLyTruongHoc_Click);
-            // 
             // lblLopHoc
             // 
-            this.lblLopHoc.Location = new System.Drawing.Point(3, 104);
+            this.lblLopHoc.Location = new System.Drawing.Point(3, 120);
             this.lblLopHoc.Name = "lblLopHoc";
             this.lblLopHoc.Size = new System.Drawing.Size(153, 26);
             this.lblLopHoc.TabIndex = 0;
@@ -122,7 +113,7 @@ namespace UI_PTTKHT
             // lblPhongHoc
             // 
             this.lblPhongHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongHoc.Location = new System.Drawing.Point(3, 130);
+            this.lblPhongHoc.Location = new System.Drawing.Point(3, 146);
             this.lblPhongHoc.Name = "lblPhongHoc";
             this.lblPhongHoc.Size = new System.Drawing.Size(153, 26);
             this.lblPhongHoc.TabIndex = 0;
@@ -317,7 +308,7 @@ namespace UI_PTTKHT
             // 
             // lblGiaoVien
             // 
-            this.lblGiaoVien.Location = new System.Drawing.Point(3, 156);
+            this.lblGiaoVien.Location = new System.Drawing.Point(3, 172);
             this.lblGiaoVien.Name = "lblGiaoVien";
             this.lblGiaoVien.Size = new System.Drawing.Size(153, 26);
             this.lblGiaoVien.TabIndex = 0;
@@ -327,7 +318,7 @@ namespace UI_PTTKHT
             // 
             // lblHocSinh
             // 
-            this.lblHocSinh.Location = new System.Drawing.Point(3, 182);
+            this.lblHocSinh.Location = new System.Drawing.Point(3, 198);
             this.lblHocSinh.Name = "lblHocSinh";
             this.lblHocSinh.Size = new System.Drawing.Size(153, 26);
             this.lblHocSinh.TabIndex = 0;
@@ -337,7 +328,7 @@ namespace UI_PTTKHT
             // 
             // lblToBoMon
             // 
-            this.lblToBoMon.Location = new System.Drawing.Point(3, 208);
+            this.lblToBoMon.Location = new System.Drawing.Point(3, 224);
             this.lblToBoMon.Name = "lblToBoMon";
             this.lblToBoMon.Size = new System.Drawing.Size(153, 26);
             this.lblToBoMon.TabIndex = 0;
@@ -347,6 +338,7 @@ namespace UI_PTTKHT
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.label8);
             this.flowLayoutPanel1.Controls.Add(this.lblTrangChu);
             this.flowLayoutPanel1.Controls.Add(this.lblThongBaoChung);
             this.flowLayoutPanel1.Controls.Add(this.lblThongTinTruong);
@@ -364,9 +356,29 @@ namespace UI_PTTKHT
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 16);
+            this.label8.TabIndex = 2;
+            // 
+            // lblQuanLyTruongHoc
+            // 
+            this.flowLayoutPanel1.SetFlowBreak(this.lblQuanLyTruongHoc, true);
+            this.lblQuanLyTruongHoc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuanLyTruongHoc.ImageKey = "(none)";
+            this.lblQuanLyTruongHoc.Location = new System.Drawing.Point(3, 94);
+            this.lblQuanLyTruongHoc.Name = "lblQuanLyTruongHoc";
+            this.lblQuanLyTruongHoc.Size = new System.Drawing.Size(153, 26);
+            this.lblQuanLyTruongHoc.TabIndex = 0;
+            this.lblQuanLyTruongHoc.Text = "Quản lý trường học ";
+            this.lblQuanLyTruongHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQuanLyTruongHoc.Click += new System.EventHandler(this.lblQuanLyTruongHoc_Click);
+            // 
             // lblThongBao
             // 
-            this.lblThongBao.Location = new System.Drawing.Point(3, 234);
+            this.lblThongBao.Location = new System.Drawing.Point(3, 250);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(153, 26);
             this.lblThongBao.TabIndex = 0;
@@ -409,16 +421,6 @@ namespace UI_PTTKHT
             this.panel1.TabIndex = 3;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -430,6 +432,16 @@ namespace UI_PTTKHT
             this.label7.Text = "admin";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UI_PTTKHT.Properties.Resources.logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -456,6 +468,7 @@ namespace UI_PTTKHT
             this.Name = "FrmAdTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Trang Chủ";
+            this.Load += new System.EventHandler(this.FrmAdTrangChu_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -473,7 +486,6 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label lblTrangChu;
         private System.Windows.Forms.Label lblThongBaoChung;
         private System.Windows.Forms.Label lblThongTinTruong;
-        private System.Windows.Forms.Label lblQuanLyTruongHoc;
         private System.Windows.Forms.Label lblLopHoc;
         private System.Windows.Forms.Label lblPhongHoc;
         private System.Windows.Forms.Panel panel3;
@@ -501,5 +513,7 @@ namespace UI_PTTKHT
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox lsbAdmin;
+        private System.Windows.Forms.Label lblQuanLyTruongHoc;
+        private System.Windows.Forms.Label label8;
     }
 }

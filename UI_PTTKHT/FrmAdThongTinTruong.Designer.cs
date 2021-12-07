@@ -433,6 +433,7 @@ namespace UI_PTTKHT
             this.Name = "FrmAdThongTinTruong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông Tin Trường Học";
+            this.Load += new System.EventHandler(this.FrmAdThongTinTruong_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

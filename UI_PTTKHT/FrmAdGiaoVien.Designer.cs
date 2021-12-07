@@ -1201,6 +1201,7 @@ namespace UI_PTTKHT
             this.Name = "FrmAdGiaoVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Danh Sách Giáo Viên";
+            this.Load += new System.EventHandler(this.FrmAdGiaoVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

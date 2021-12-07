@@ -45,7 +45,6 @@ namespace UI_PTTKHT
                 thread.Start();
                 Thread.Sleep(100);
                 this.Close();
-
             }
             else
             {

@@ -373,6 +373,7 @@ namespace UI_PTTKHT
             this.Name = "FrmAdThongBaoChung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông Báo Chung";
+            this.Load += new System.EventHandler(this.FrmAdThongBaoChung_Load);
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

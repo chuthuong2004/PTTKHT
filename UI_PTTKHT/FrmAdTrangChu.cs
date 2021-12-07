@@ -45,8 +45,27 @@ namespace UI_PTTKHT
 
         private void lblQuanLyTruongHoc_Click(object sender, EventArgs e)
         {
-            //FrmAdTrangChu frm = new FrmAdTrangChu();
-            //ShowForm(frm);
+            Thread.Sleep(10);
+            if (lblLopHoc.Visible && lblPhongHoc.Visible && lblGiaoVien.Visible && lblHocSinh.Visible && lblToBoMon.Visible
+                && lblThongBao.Visible)
+            {
+                lblLopHoc.Visible = false;
+                lblPhongHoc.Visible = false;
+                lblGiaoVien.Visible = false;
+                lblHocSinh.Visible = false;
+                lblToBoMon.Visible = false;
+                lblThongBao.Visible = false;
+            }
+            else
+            {
+                lblLopHoc.Visible = true;
+                lblPhongHoc.Visible = true;
+                lblGiaoVien.Visible = true;
+                lblHocSinh.Visible = true;
+                lblToBoMon.Visible = true;
+                lblThongBao.Visible = true;
+            }
+
         }
 
         private void lblLopHoc_Click(object sender, EventArgs e)
@@ -97,7 +116,7 @@ namespace UI_PTTKHT
                 MessageBox.Show("Phần sửa thông tin admin chưa được cập nhật !");
                 lsbAdmin.Visible = false;
             }
-            else if(lsbAdmin.SelectedIndex == 1)
+            else if (lsbAdmin.SelectedIndex == 1)
             {
                 MessageBox.Show("Phần đổi mật khẩu chưa được cập nhật !");
                 lsbAdmin.Visible = false;
@@ -169,6 +188,16 @@ namespace UI_PTTKHT
         {
             FrmAdGiaoVien frm = new FrmAdGiaoVien();
             ShowForm(frm);
+        }
+
+        private void FrmAdTrangChu_Load(object sender, EventArgs e)
+        {
+            lblLopHoc.Visible = false;
+            lblPhongHoc.Visible = false;
+            lblGiaoVien.Visible = false;
+            lblHocSinh.Visible = false;
+            lblToBoMon.Visible = false;
+            lblThongBao.Visible = false;
         }
     }
 }
