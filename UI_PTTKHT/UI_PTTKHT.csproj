@@ -166,6 +166,18 @@
     <Compile Include="FrmAdThongBao.Designer.cs">
       <DependentUpon>FrmAdThongBao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHSThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHSThongBao.Designer.cs">
+      <DependentUpon>FrmHSThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHSTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHSTKB.Designer.cs">
+      <DependentUpon>FrmHSTKB.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHSTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +189,18 @@
     </Compile>
     <Compile Include="FrmAdThemGiaoVien.Designer.cs">
       <DependentUpon>FrmAdThemGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHSTTCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHSTTCaNhan.Designer.cs">
+      <DependentUpon>FrmHSTTCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHSXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHSXemDiem.Designer.cs">
+      <DependentUpon>FrmHSXemDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,11 +264,23 @@
     <EmbeddedResource Include="FrmAdThongBao.resx">
       <DependentUpon>FrmAdThongBao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmHSThongBao.resx">
+      <DependentUpon>FrmHSThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHSTKB.resx">
+      <DependentUpon>FrmHSTKB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHSTrangChu.resx">
       <DependentUpon>FrmHSTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdThemGiaoVien.resx">
       <DependentUpon>FrmAdThemGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHSTTCaNhan.resx">
+      <DependentUpon>FrmHSTTCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHSXemDiem.resx">
+      <DependentUpon>FrmHSXemDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -304,6 +340,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_1581388637969.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarT.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
